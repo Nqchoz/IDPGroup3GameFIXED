@@ -1,13 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using TMPro;
 
 public class Clock : MonoBehaviour
 {
-    public text timeText;
+    public Text timerText;
     public int time;
-    public TextMeshProUGUI timeText;
 
     // Start is called before the first frame update
     void Start()
@@ -18,7 +18,8 @@ public class Clock : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
         time += Mathf.RoundToInt(Time.deltaTime);
-        timeText.text = time.ToString();
+        timerText.text = time.ToString();
     }
 }
