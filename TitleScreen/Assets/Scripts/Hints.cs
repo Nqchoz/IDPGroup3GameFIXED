@@ -17,29 +17,37 @@ public class Hints : MonoBehaviour
 
     public int indexhint;
     public GameObject obj1;
-    public float timestart;
-    public GameObject AnimationBubble;
-    public string HintText;
+    public Canvas HintBox;
+    public Image HintBoxImage;
     public TextMeshProUGUI HintTextBox;
+    public Button hintbutton;
 
 
     void Awake(){
         indexhint = 1;
         obj1 = GameObject.FindGameObjectWithTag ("Timer");
-        HintText = hintinfo[indexhint];
     }
 
     public void gethint(){
-
         obj1.GetComponent<Clock> ().timetodisplay -= hintdeduct[indexhint];
-        HintTextBox = GameObject.FindGameObjectWithTag("HintText");
-        showbubble();
+        StartCoroutine(showbubble());
 
     }
 
-    public void showbubble(){
-        GameObject prefab = Instantiate(AnimationBubble, transform.position, Quaternion.identity);
-        HintTextBox.text = HintText;
-        
+    IEnumerator showbubble(){
+        HintTextBoxBox.text = hintinfo[indexhint];
+        HintBox.color = new Color(1, 1, 1, 0);
+        HintBox.enabled = true;
+        for (int i = 0; i < 5; i+= Time.deltaTime){
+            HintBoxBox.color = new Color(1, 1, 1, i);
+        }
+        hintbutton.interactable = false;
+        yield return new WaitForSeconds(6);
+        for (int i = 5; i > 0; i-=Time.deltaTime)
+        {
+            HintBoxBox.color = new Color(1, 1, 1, i);
+        }
+        HintBox.enabled = false;
+        hintbutton.interactable = true;
     }
 }

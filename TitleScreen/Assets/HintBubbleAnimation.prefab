@@ -228,7 +228,7 @@ MonoBehaviour:
   indexhint: 0
   obj1: {fileID: 0}
   timestart: 0
-  AnimationBubble: {fileID: 0}
+  HintBox: {fileID: 0}
   HintText: 
   HintTextBox: {fileID: 6556840889646612203}
 --- !u!23 &235562860596316435

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class SettingsMEnu : MonoBehaviour
 {
@@ -13,7 +14,11 @@ public class SettingsMEnu : MonoBehaviour
         obj = GameObject.FindGameObjectWithTag ("Timer");
 
     }
-
+    
+    public void ExitToMenu()
+    {
+       SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+    }
 
     public void popup(){
 
@@ -30,7 +35,7 @@ public class SettingsMEnu : MonoBehaviour
             canvas.enabled = showing;
             obj.GetComponent<Clock> ().timerpower = true;
         }
-
+        
 
 
 
