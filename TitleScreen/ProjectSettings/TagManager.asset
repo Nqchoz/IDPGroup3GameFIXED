@@ -8,6 +8,7 @@ TagManager:
   - HintText
   - AnimationBubble
   - pickupscript
+  - GUI
   layers:
   - Default
   - TransparentFX
