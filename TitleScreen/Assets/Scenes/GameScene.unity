@@ -244,6 +244,7 @@ MonoBehaviour:
   OpenDiary3: {x: 2880, y: 5400, z: -10}
   colorlockzoombutton: {fileID: 0}
   opendiarybutton: {fileID: 0}
+  DiaryUnlocked: 0
 --- !u!114 &62051542
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -922,6 +923,7 @@ MonoBehaviour:
   OpenDiary3: {x: 2880, y: 5400, z: -10}
   colorlockzoombutton: {fileID: 0}
   opendiarybutton: {fileID: 0}
+  DiaryUnlocked: 0
 --- !u!114 &243126503
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1355,6 +1357,7 @@ MonoBehaviour:
   OpenDiary3: {x: 2880, y: 5400, z: -10}
   colorlockzoombutton: {fileID: 0}
   opendiarybutton: {fileID: 0}
+  DiaryUnlocked: 0
 --- !u!114 &445867606
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1717,7 +1720,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1243882813}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &690922573
 MonoBehaviour:
@@ -1739,11 +1742,12 @@ MonoBehaviour:
   BedroomRoom2Vector: {x: 2880, y: 540, z: -10}
   DiaryZoomVector: {x: 2880, y: 1620, z: -10}
   ColorlockZoomVector: {x: 2880, y: 2700, z: -10}
-  OpenDiary1: {x: 2880, y: 3240, z: -10}
-  OpenDiary2: {x: 2880, y: 4320, z: -10}
-  OpenDiary3: {x: 2880, y: 5400, z: -10}
+  OpenDiary1: {x: 2880, y: 3780, z: -10}
+  OpenDiary2: {x: 2880, y: 4860, z: -10}
+  OpenDiary3: {x: 2880, y: 5940, z: -10}
   colorlockzoombutton: {fileID: 748242573}
-  opendiarybutton: {fileID: 0}
+  opendiarybutton: {fileID: 1315761091}
+  DiaryUnlocked: 0
 --- !u!1 &707462425
 GameObject:
   m_ObjectHideFlags: 0
@@ -1865,6 +1869,7 @@ MonoBehaviour:
   OpenDiary3: {x: 2880, y: 5400, z: -10}
   colorlockzoombutton: {fileID: 0}
   opendiarybutton: {fileID: 0}
+  DiaryUnlocked: 0
 --- !u!114 &707462429
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2024,6 +2029,7 @@ MonoBehaviour:
   OpenDiary3: {x: 2880, y: 5400, z: -10}
   colorlockzoombutton: {fileID: 0}
   opendiarybutton: {fileID: 0}
+  DiaryUnlocked: 0
 --- !u!114 &720718176
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2078,7 +2084,7 @@ GameObject:
   - component: {fileID: 748242573}
   m_Layer: 5
   m_Name: ColorlockHitbox
-  m_TagString: Untagged
+  m_TagString: Colorlockbutton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2184,6 +2190,7 @@ MonoBehaviour:
   OpenDiary3: {x: 2880, y: 5400, z: -10}
   colorlockzoombutton: {fileID: 0}
   opendiarybutton: {fileID: 0}
+  DiaryUnlocked: 0
 --- !u!61 &748242575
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2369,6 +2376,7 @@ MonoBehaviour:
   OpenDiary3: {x: 2880, y: 5400, z: -10}
   colorlockzoombutton: {fileID: 0}
   opendiarybutton: {fileID: 0}
+  DiaryUnlocked: 0
 --- !u!114 &754437077
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3503,6 +3511,7 @@ MonoBehaviour:
   OpenDiary3: {x: 2880, y: 5400, z: -10}
   colorlockzoombutton: {fileID: 0}
   opendiarybutton: {fileID: 0}
+  DiaryUnlocked: 0
 --- !u!114 &903242128
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3827,11 +3836,12 @@ MonoBehaviour:
   BedroomRoom2Vector: {x: 2880, y: 540, z: -10}
   DiaryZoomVector: {x: 2880, y: 1620, z: -10}
   ColorlockZoomVector: {x: 2880, y: 2700, z: -10}
-  OpenDiary1: {x: 2880, y: 3240, z: -10}
-  OpenDiary2: {x: 2880, y: 4320, z: -10}
-  OpenDiary3: {x: 2880, y: 5400, z: -10}
+  OpenDiary1: {x: 2880, y: 3780, z: -10}
+  OpenDiary2: {x: 2880, y: 4860, z: -10}
+  OpenDiary3: {x: 2880, y: 5940, z: -10}
   colorlockzoombutton: {fileID: 748242573}
-  opendiarybutton: {fileID: 0}
+  opendiarybutton: {fileID: 1315761091}
+  DiaryUnlocked: 0
 --- !u!1 &1028922551
 GameObject:
   m_ObjectHideFlags: 0
@@ -3962,6 +3972,7 @@ MonoBehaviour:
   OpenDiary3: {x: 2880, y: 5400, z: -10}
   colorlockzoombutton: {fileID: 748242573}
   opendiarybutton: {fileID: 0}
+  DiaryUnlocked: 0
 --- !u!114 &1028922557
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4325,6 +4336,7 @@ MonoBehaviour:
   OpenDiary3: {x: 2880, y: 5400, z: -10}
   colorlockzoombutton: {fileID: 0}
   opendiarybutton: {fileID: 0}
+  DiaryUnlocked: 0
 --- !u!114 &1147076545
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4603,8 +4615,8 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 2029855050}
   - {fileID: 690922572}
+  - {fileID: 2029855050}
   - {fileID: 62051539}
   - {fileID: 1147076542}
   m_Father: {fileID: 219579754}
@@ -5009,8 +5021,9 @@ MonoBehaviour:
   OpenDiary1: {x: 2880, y: 3240, z: -10}
   OpenDiary2: {x: 2880, y: 4320, z: -10}
   OpenDiary3: {x: 2880, y: 5400, z: -10}
-  colorlockzoombutton: {fileID: 0}
-  opendiarybutton: {fileID: 0}
+  colorlockzoombutton: {fileID: 748242573}
+  opendiarybutton: {fileID: 1315761091}
+  DiaryUnlocked: 0
 --- !u!114 &1267660009
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5145,7 +5158,7 @@ GameObject:
   - component: {fileID: 1315761091}
   m_Layer: 5
   m_Name: OpenDiaryHitbox
-  m_TagString: Untagged
+  m_TagString: OpenDiaryButton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5177,7 +5190,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1315761089}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
   m_Name: 
@@ -5250,7 +5263,8 @@ MonoBehaviour:
   OpenDiary2: {x: 2880, y: 4320, z: -10}
   OpenDiary3: {x: 2880, y: 5400, z: -10}
   colorlockzoombutton: {fileID: 0}
-  opendiarybutton: {fileID: 0}
+  opendiarybutton: {fileID: 1315761091}
+  DiaryUnlocked: 0
 --- !u!61 &1315761093
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6270,6 +6284,7 @@ MonoBehaviour:
   OpenDiary3: {x: 2880, y: 5400, z: -10}
   colorlockzoombutton: {fileID: 0}
   opendiarybutton: {fileID: 0}
+  DiaryUnlocked: 0
 --- !u!114 &1538664590
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6563,6 +6578,7 @@ MonoBehaviour:
   OpenDiary3: {x: 2880, y: 5400, z: -10}
   colorlockzoombutton: {fileID: 0}
   opendiarybutton: {fileID: 0}
+  DiaryUnlocked: 0
 --- !u!61 &1560988021
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6737,6 +6753,7 @@ MonoBehaviour:
   OpenDiary3: {x: 2880, y: 5400, z: -10}
   colorlockzoombutton: {fileID: 0}
   opendiarybutton: {fileID: 0}
+  DiaryUnlocked: 0
 --- !u!1 &1614377573
 GameObject:
   m_ObjectHideFlags: 0
@@ -7070,6 +7087,7 @@ MonoBehaviour:
   OpenDiary3: {x: 2880, y: 5400, z: -10}
   colorlockzoombutton: {fileID: 0}
   opendiarybutton: {fileID: 0}
+  DiaryUnlocked: 0
 --- !u!114 &1809990023
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7276,6 +7294,7 @@ MonoBehaviour:
   OpenDiary3: {x: 2880, y: 5400, z: -10}
   colorlockzoombutton: {fileID: 0}
   opendiarybutton: {fileID: 0}
+  DiaryUnlocked: 0
 --- !u!114 &1892468787
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7348,7 +7367,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1243882813}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -7436,6 +7455,7 @@ MonoBehaviour:
   OpenDiary3: {x: 2880, y: 5400, z: -10}
   colorlockzoombutton: {fileID: 748242573}
   opendiarybutton: {fileID: 0}
+  DiaryUnlocked: 0
 --- !u!61 &2029855053
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8101,6 +8121,7 @@ MonoBehaviour:
   OpenDiary3: {x: 2880, y: 5400, z: -10}
   colorlockzoombutton: {fileID: 0}
   opendiarybutton: {fileID: 0}
+  DiaryUnlocked: 0
 --- !u!114 &2064445889
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8260,6 +8281,7 @@ MonoBehaviour:
   OpenDiary3: {x: 2880, y: 5400, z: -10}
   colorlockzoombutton: {fileID: 0}
   opendiarybutton: {fileID: 0}
+  DiaryUnlocked: 0
 --- !u!114 &2100507415
 MonoBehaviour:
   m_ObjectHideFlags: 0

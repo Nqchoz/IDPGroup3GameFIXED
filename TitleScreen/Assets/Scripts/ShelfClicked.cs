@@ -9,23 +9,25 @@ public class ShelfClicked : MonoBehaviour
 
     public GameObject camra;
     public Colorlock clscript;
-    public Vector3 ShelfExitZoomVector = new Vector3(960f, 540f, -10f);
-    public Vector3 Shelf2ZoomVector = new Vector3(960f, 2700f, -10f);
-    public Vector3 Shelf3ZoomVector = new Vector3(960f, 1620f, -10f);
-    public Vector3 BedroomRoom2Vector = new Vector3(2880f, 540f, -10f);
-    public Vector3 DiaryZoomVector = new Vector3(2880f, 1620f, -10f);
-    public Vector3 ColorlockZoomVector = new Vector3(2880f, 2700f, -10f);
-    public Vector3 OpenDiary1 = new Vector3(2880f, 3240f, -10f);
-    public Vector3 OpenDiary2 = new Vector3(2880f, 4320f, -10f);
-    public Vector3 OpenDiary3 = new Vector3(2880f, 5400f, -10f);
-    public Button colorlockzoombutton;
-    public Button opendiarybutton;
+    Vector3 ShelfExitZoomVector = new Vector3(960f, 540f, -10f);
+    Vector3 Shelf2ZoomVector = new Vector3(960f, 2700f, -10f);
+    Vector3 Shelf3ZoomVector = new Vector3(960f, 1620f, -10f);
+    Vector3 BedroomRoom2Vector = new Vector3(2880f, 540f, -10f);
+    Vector3 DiaryZoomVector = new Vector3(2880f, 1620f, -10f);
+    Vector3 ColorlockZoomVector = new Vector3(2880f, 2700f, -10f);
+    Vector3 OpenDiary1 = new Vector3(2880f, 3780f, -10f);
+    Vector3 OpenDiary2 = new Vector3(2880f, 4860f, -10f);
+    Vector3 OpenDiary3 = new Vector3(2880f, 5940f, -10f);
+    Button colorlockzoombutton;
+    Button opendiarybutton;
+    public bool DiaryUnlocked;
     
     void Awake(){
         clscript = FindObjectOfType<Colorlock>();
-        colorlockzoombutton = FindObjectOfType<Button>();
-        opendiarybutton = FindObjectOfType<Button>();
+        colorlockzoombutton = GameObject.FindGameObjectWithTag("Colorlockbutton").GetComponent<Button>();
+        opendiarybutton = GameObject.FindGameObjectWithTag("OpenDiaryButton").GetComponent<Button>();
         opendiarybutton.enabled = false;
+        Debug.Log(opendiarybutton.enabled);
     }
     public void Shelf_ExitZoom(){
 
@@ -83,10 +85,12 @@ public class ShelfClicked : MonoBehaviour
 
 
     void Update(){
-        if (clscript.Locksolved == true){
+        if (clscript.Locksolved == true && DiaryUnlocked == false){
             colorlockzoombutton.enabled = false;
             DiaryZoom();
             opendiarybutton.enabled = true;
+            Debug.Log(opendiarybutton.enabled);
+            DiaryUnlocked = true;
 
         }
 
