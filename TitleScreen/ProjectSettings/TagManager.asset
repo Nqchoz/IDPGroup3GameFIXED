@@ -9,6 +9,7 @@ TagManager:
   - AnimationBubble
   - pickupscript
   - GUI
+  - ColorlockScript
   layers:
   - Default
   - TransparentFX
