@@ -7,6 +7,7 @@ public class SlotsScript : MonoBehaviour
 {
     private Inventory inventory;
     public int slotnumber;
+    private HeldHandle = GameObject.FindGameObjectWithTag("ItemHandle");
 
 
     // Start is called before the first frame update
@@ -20,9 +21,12 @@ public class SlotsScript : MonoBehaviour
     {
         if (transform.childCount <= 0) {
             inventory.isFull[slotnumber] = false;
+
         }   
     }
-    
+    public void DestroyHandle(){
+        GameObject.Destroy(HeldHandle);  
+    }
 
     
 }

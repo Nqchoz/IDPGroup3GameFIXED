@@ -21,14 +21,13 @@ public class Musicboxscript : MonoBehaviour
         movementscript = GameObject.FindGameObjectWithTag("MovementScript").GetComponent<ShelfClicked>();
         OpenTextFieldBTN = GameObject.Find("MusicBoxInteractHB").GetComponent<Button>();
         slotsscript = GameObject.FindGameObjectWithTag("SlotsScript").GetComponent<SlotsScript>();
-        HeldHandle = GameObject.FindGameObjectWithTag("ItemHandle");
+       
    }
 
     public void MusicBoxInteract(){
         if (pickupscript.handleacquired && movementscript.camra.transform.position == movementscript.MusicBoxZoom1 && alreadychanged == false){
             Musicbox.GetComponent<Image>().sprite = MBWithHandle;
             alreadychanged = true;
-            GameObject.Destroy(HeldHandle);  
         }
     }
     public void MusicBoxInteract2(){
