@@ -18,6 +18,7 @@ public class ShelfClicked : MonoBehaviour
     Vector3 OpenDiary1 = new Vector3(2880f, 3780f, -10f);
     Vector3 OpenDiary2 = new Vector3(2880f, 4860f, -10f);
     Vector3 OpenDiary3 = new Vector3(2880f, 5940f, -10f);
+    Vector3 MusicBoxZoom1 = new Vector3(960f, 3780f, -10f);
     Button colorlockzoombutton;
     Button opendiarybutton;
     public bool DiaryUnlocked;
@@ -80,6 +81,12 @@ public class ShelfClicked : MonoBehaviour
     {
        
         camra.transform.position = OpenDiary3;
+        
+    }
+    public void MusicBoxZoom()
+    {
+       
+        camra.transform.position = MusicBoxZoom1;
         
     }
 

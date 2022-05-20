@@ -156,7 +156,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1243882813}
-  m_RootOrder: 2
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -233,17 +233,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   camra: {fileID: 1609351147}
   clscript: {fileID: 0}
-  ShelfExitZoomVector: {x: 960, y: 540, z: -10}
-  Shelf2ZoomVector: {x: 960, y: 2700, z: -10}
-  Shelf3ZoomVector: {x: 960, y: 1620, z: -10}
-  BedroomRoom2Vector: {x: 2880, y: 540, z: -10}
-  DiaryZoomVector: {x: 2880, y: 1620, z: -10}
-  ColorlockZoomVector: {x: 2880, y: 2700, z: -10}
-  OpenDiary1: {x: 2880, y: 3240, z: -10}
-  OpenDiary2: {x: 2880, y: 4320, z: -10}
-  OpenDiary3: {x: 2880, y: 5400, z: -10}
-  colorlockzoombutton: {fileID: 0}
-  opendiarybutton: {fileID: 0}
   DiaryUnlocked: 0
 --- !u!114 &62051542
 MonoBehaviour:
@@ -794,6 +783,7 @@ RectTransform:
   - {fileID: 146752907}
   - {fileID: 1243882813}
   - {fileID: 914003870}
+  - {fileID: 806793536}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -802,6 +792,182 @@ RectTransform:
   m_AnchoredPosition: {x: 960, y: 540}
   m_SizeDelta: {x: 1920, y: 1080}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &223142897
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 223142898}
+  - component: {fileID: 223142903}
+  - component: {fileID: 223142902}
+  - component: {fileID: 223142901}
+  - component: {fileID: 223142900}
+  - component: {fileID: 223142899}
+  m_Layer: 5
+  m_Name: STYellowHB
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &223142898
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 223142897}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1243882813}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 209, y: -268.7979}
+  m_SizeDelta: {x: 150.8776, y: 293.8302}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &223142899
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 223142897}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 223142902}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 690922573}
+        m_TargetAssemblyTypeName: ShelfClicked, Assembly-CSharp
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &223142900
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 223142897}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6e0bafebf6ce9242a3047ec4888f6bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  camra: {fileID: 1609351147}
+  clscript: {fileID: 765807032}
+  DiaryUnlocked: 0
+--- !u!61 &223142901
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 223142897}
+  m_Enabled: 0
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 300, y: 545}
+  m_EdgeRadius: 0
+--- !u!114 &223142902
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 223142897}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &223142903
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 223142897}
+  m_CullTransparentMesh: 1
 --- !u!1 &243126499
 GameObject:
   m_ObjectHideFlags: 0
@@ -912,17 +1078,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   camra: {fileID: 1609351147}
   clscript: {fileID: 0}
-  ShelfExitZoomVector: {x: 960, y: 540, z: -10}
-  Shelf2ZoomVector: {x: 960, y: 2700, z: -10}
-  Shelf3ZoomVector: {x: 960, y: 1620, z: -10}
-  BedroomRoom2Vector: {x: 2880, y: 540, z: -10}
-  DiaryZoomVector: {x: 2880, y: 1620, z: -10}
-  ColorlockZoomVector: {x: 2880, y: 2700, z: -10}
-  OpenDiary1: {x: 2880, y: 3240, z: -10}
-  OpenDiary2: {x: 2880, y: 4320, z: -10}
-  OpenDiary3: {x: 2880, y: 5400, z: -10}
-  colorlockzoombutton: {fileID: 0}
-  opendiarybutton: {fileID: 0}
   DiaryUnlocked: 0
 --- !u!114 &243126503
 MonoBehaviour:
@@ -962,6 +1117,82 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 243126499}
   m_CullTransparentMesh: 1
+--- !u!1 &246671049
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 246671052}
+  - component: {fileID: 246671051}
+  - component: {fileID: 246671050}
+  m_Layer: 5
+  m_Name: Slots (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &246671050
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 246671049}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 534d9129a6cdaf947941d5e05b217094, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &246671051
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 246671049}
+  m_CullTransparentMesh: 1
+--- !u!224 &246671052
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 246671049}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2043933779}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 1, y: 0.5}
+  m_AnchorMax: {x: 1, y: 0.5}
+  m_AnchoredPosition: {x: -275, y: -460}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &300360593
 GameObject:
   m_ObjectHideFlags: 0
@@ -1154,6 +1385,42 @@ CanvasGroup:
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
+--- !u!1 &410845755
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 410845756}
+  m_Layer: 5
+  m_Name: MusicBoxScript
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &410845756
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 410845755}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 806793536}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 260.78223, y: -1399.3604}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &417249210
 GameObject:
   m_ObjectHideFlags: 0
@@ -1346,17 +1613,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   camra: {fileID: 1609351147}
   clscript: {fileID: 0}
-  ShelfExitZoomVector: {x: 960, y: 540, z: -10}
-  Shelf2ZoomVector: {x: 960, y: 2700, z: -10}
-  Shelf3ZoomVector: {x: 960, y: 1620, z: -10}
-  BedroomRoom2Vector: {x: 2880, y: 540, z: -10}
-  DiaryZoomVector: {x: 2880, y: 1620, z: -10}
-  ColorlockZoomVector: {x: 2880, y: 2700, z: -10}
-  OpenDiary1: {x: 2880, y: 3240, z: -10}
-  OpenDiary2: {x: 2880, y: 4320, z: -10}
-  OpenDiary3: {x: 2880, y: 5400, z: -10}
-  colorlockzoombutton: {fileID: 0}
-  opendiarybutton: {fileID: 0}
   DiaryUnlocked: 0
 --- !u!114 &445867606
 MonoBehaviour:
@@ -1395,6 +1651,182 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 445867602}
+  m_CullTransparentMesh: 1
+--- !u!1 &483973901
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 483973902}
+  - component: {fileID: 483973907}
+  - component: {fileID: 483973906}
+  - component: {fileID: 483973905}
+  - component: {fileID: 483973904}
+  - component: {fileID: 483973903}
+  m_Layer: 5
+  m_Name: STGreenHB
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &483973902
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 483973901}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1243882813}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 416, y: -268.7979}
+  m_SizeDelta: {x: 150.8776, y: 293.8302}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &483973903
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 483973901}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 483973906}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 690922573}
+        m_TargetAssemblyTypeName: ShelfClicked, Assembly-CSharp
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &483973904
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 483973901}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6e0bafebf6ce9242a3047ec4888f6bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  camra: {fileID: 1609351147}
+  clscript: {fileID: 765807032}
+  DiaryUnlocked: 0
+--- !u!61 &483973905
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 483973901}
+  m_Enabled: 0
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 300, y: 545}
+  m_EdgeRadius: 0
+--- !u!114 &483973906
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 483973901}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &483973907
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 483973901}
   m_CullTransparentMesh: 1
 --- !u!1 &561393244
 GameObject:
@@ -1535,6 +1967,155 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 676036913}
+  m_CullTransparentMesh: 1
+--- !u!1 &680796275
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 680796276}
+  - component: {fileID: 680796280}
+  - component: {fileID: 680796279}
+  - component: {fileID: 680796278}
+  - component: {fileID: 680796277}
+  m_Layer: 5
+  m_Name: MusicBoxExit
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &680796276
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 680796275}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 806793536}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: -500}
+  m_SizeDelta: {x: 80, y: 55.2}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &680796277
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 680796275}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 680796279}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 680796278}
+        m_TargetAssemblyTypeName: ShelfClicked, Assembly-CSharp
+        m_MethodName: Shelf_2Zoom
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &680796278
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 680796275}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6e0bafebf6ce9242a3047ec4888f6bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  camra: {fileID: 1609351147}
+  clscript: {fileID: 0}
+  DiaryUnlocked: 0
+--- !u!114 &680796279
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 680796275}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: ad2dce5a2c91dd44187e8e11e886f85c, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &680796280
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 680796275}
   m_CullTransparentMesh: 1
 --- !u!1 &682252160
 GameObject:
@@ -1736,17 +2317,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   camra: {fileID: 1609351147}
   clscript: {fileID: 765807032}
-  ShelfExitZoomVector: {x: 960, y: 540, z: -10}
-  Shelf2ZoomVector: {x: 960, y: 1620, z: -10}
-  Shelf3ZoomVector: {x: 960, y: 1620, z: -10}
-  BedroomRoom2Vector: {x: 2880, y: 540, z: -10}
-  DiaryZoomVector: {x: 2880, y: 1620, z: -10}
-  ColorlockZoomVector: {x: 2880, y: 2700, z: -10}
-  OpenDiary1: {x: 2880, y: 3780, z: -10}
-  OpenDiary2: {x: 2880, y: 4860, z: -10}
-  OpenDiary3: {x: 2880, y: 5940, z: -10}
-  colorlockzoombutton: {fileID: 748242573}
-  opendiarybutton: {fileID: 1315761091}
   DiaryUnlocked: 0
 --- !u!1 &707462425
 GameObject:
@@ -1858,17 +2428,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   camra: {fileID: 1609351147}
   clscript: {fileID: 0}
-  ShelfExitZoomVector: {x: 960, y: 540, z: -10}
-  Shelf2ZoomVector: {x: 960, y: 2700, z: -10}
-  Shelf3ZoomVector: {x: 960, y: 1620, z: -10}
-  BedroomRoom2Vector: {x: 2880, y: 540, z: -10}
-  DiaryZoomVector: {x: 2880, y: 1620, z: -10}
-  ColorlockZoomVector: {x: 2880, y: 2700, z: -10}
-  OpenDiary1: {x: 2880, y: 3240, z: -10}
-  OpenDiary2: {x: 2880, y: 4320, z: -10}
-  OpenDiary3: {x: 2880, y: 5400, z: -10}
-  colorlockzoombutton: {fileID: 0}
-  opendiarybutton: {fileID: 0}
   DiaryUnlocked: 0
 --- !u!114 &707462429
 MonoBehaviour:
@@ -2018,17 +2577,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   camra: {fileID: 1609351147}
   clscript: {fileID: 0}
-  ShelfExitZoomVector: {x: 960, y: 540, z: -10}
-  Shelf2ZoomVector: {x: 960, y: 2700, z: -10}
-  Shelf3ZoomVector: {x: 960, y: 1620, z: -10}
-  BedroomRoom2Vector: {x: 2880, y: 540, z: -10}
-  DiaryZoomVector: {x: 2880, y: 1620, z: -10}
-  ColorlockZoomVector: {x: 2880, y: 2700, z: -10}
-  OpenDiary1: {x: 2880, y: 3240, z: -10}
-  OpenDiary2: {x: 2880, y: 4320, z: -10}
-  OpenDiary3: {x: 2880, y: 5400, z: -10}
-  colorlockzoombutton: {fileID: 0}
-  opendiarybutton: {fileID: 0}
   DiaryUnlocked: 0
 --- !u!114 &720718176
 MonoBehaviour:
@@ -2179,17 +2727,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   camra: {fileID: 1609351147}
   clscript: {fileID: 0}
-  ShelfExitZoomVector: {x: 960, y: 540, z: -10}
-  Shelf2ZoomVector: {x: 960, y: 1620, z: -10}
-  Shelf3ZoomVector: {x: 960, y: 1620, z: -10}
-  BedroomRoom2Vector: {x: 2880, y: 540, z: -10}
-  DiaryZoomVector: {x: 2880, y: 1620, z: -10}
-  ColorlockZoomVector: {x: 2880, y: 2700, z: -10}
-  OpenDiary1: {x: 2880, y: 3240, z: -10}
-  OpenDiary2: {x: 2880, y: 4320, z: -10}
-  OpenDiary3: {x: 2880, y: 5400, z: -10}
-  colorlockzoombutton: {fileID: 0}
-  opendiarybutton: {fileID: 0}
   DiaryUnlocked: 0
 --- !u!61 &748242575
 BoxCollider2D:
@@ -2365,17 +2902,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   camra: {fileID: 1609351147}
   clscript: {fileID: 0}
-  ShelfExitZoomVector: {x: 960, y: 540, z: -10}
-  Shelf2ZoomVector: {x: 960, y: 2700, z: -10}
-  Shelf3ZoomVector: {x: 960, y: 1620, z: -10}
-  BedroomRoom2Vector: {x: 2880, y: 540, z: -10}
-  DiaryZoomVector: {x: 2880, y: 1620, z: -10}
-  ColorlockZoomVector: {x: 2880, y: 2700, z: -10}
-  OpenDiary1: {x: 2880, y: 3240, z: -10}
-  OpenDiary2: {x: 2880, y: 4320, z: -10}
-  OpenDiary3: {x: 2880, y: 5400, z: -10}
-  colorlockzoombutton: {fileID: 0}
-  opendiarybutton: {fileID: 0}
   DiaryUnlocked: 0
 --- !u!114 &754437077
 MonoBehaviour:
@@ -2795,6 +3321,82 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!1 &770264978
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 770264979}
+  - component: {fileID: 770264981}
+  - component: {fileID: 770264980}
+  m_Layer: 5
+  m_Name: Slots (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &770264979
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 770264978}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2043933779}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 1, y: 0.5}
+  m_AnchorMax: {x: 1, y: 0.5}
+  m_AnchoredPosition: {x: -425, y: -460}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &770264980
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 770264978}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 534d9129a6cdaf947941d5e05b217094, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &770264981
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 770264978}
+  m_CullTransparentMesh: 1
 --- !u!1 &770956013
 GameObject:
   m_ObjectHideFlags: 0
@@ -3167,6 +3769,85 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 781175710}
   m_CullTransparentMesh: 1
+--- !u!1 &806793535
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 806793536}
+  - component: {fileID: 806793538}
+  - component: {fileID: 806793537}
+  m_Layer: 5
+  m_Name: MusicBox1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &806793536
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 806793535}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 410845756}
+  - {fileID: 1919645947}
+  - {fileID: 680796276}
+  m_Father: {fileID: 219579754}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: 0, y: 3780}
+  m_SizeDelta: {x: 1920, y: 1080}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &806793537
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 806793535}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 7e7b2f38b9327f94d9c8179d2a09649d, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &806793538
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 806793535}
+  m_CullTransparentMesh: 1
 --- !u!1 &814013372
 GameObject:
   m_ObjectHideFlags: 0
@@ -3500,17 +4181,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   camra: {fileID: 1609351147}
   clscript: {fileID: 0}
-  ShelfExitZoomVector: {x: 960, y: 540, z: -10}
-  Shelf2ZoomVector: {x: 960, y: 2700, z: -10}
-  Shelf3ZoomVector: {x: 960, y: 1620, z: -10}
-  BedroomRoom2Vector: {x: 2880, y: 540, z: -10}
-  DiaryZoomVector: {x: 2880, y: 1620, z: -10}
-  ColorlockZoomVector: {x: 2880, y: 2700, z: -10}
-  OpenDiary1: {x: 2880, y: 3240, z: -10}
-  OpenDiary2: {x: 2880, y: 4320, z: -10}
-  OpenDiary3: {x: 2880, y: 5400, z: -10}
-  colorlockzoombutton: {fileID: 0}
-  opendiarybutton: {fileID: 0}
   DiaryUnlocked: 0
 --- !u!114 &903242128
 MonoBehaviour:
@@ -3830,17 +4500,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   camra: {fileID: 1609351147}
   clscript: {fileID: 765807032}
-  ShelfExitZoomVector: {x: 960, y: 540, z: -10}
-  Shelf2ZoomVector: {x: 960, y: 1620, z: -10}
-  Shelf3ZoomVector: {x: 960, y: 1620, z: -10}
-  BedroomRoom2Vector: {x: 2880, y: 540, z: -10}
-  DiaryZoomVector: {x: 2880, y: 1620, z: -10}
-  ColorlockZoomVector: {x: 2880, y: 2700, z: -10}
-  OpenDiary1: {x: 2880, y: 3780, z: -10}
-  OpenDiary2: {x: 2880, y: 4860, z: -10}
-  OpenDiary3: {x: 2880, y: 5940, z: -10}
-  colorlockzoombutton: {fileID: 748242573}
-  opendiarybutton: {fileID: 1315761091}
   DiaryUnlocked: 0
 --- !u!1 &1028922551
 GameObject:
@@ -3961,17 +4620,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   camra: {fileID: 1609351147}
   clscript: {fileID: 765807032}
-  ShelfExitZoomVector: {x: 960, y: 540, z: -10}
-  Shelf2ZoomVector: {x: 960, y: 1620, z: -10}
-  Shelf3ZoomVector: {x: 960, y: 1620, z: -10}
-  BedroomRoom2Vector: {x: 2880, y: 540, z: -10}
-  DiaryZoomVector: {x: 2880, y: 1620, z: -10}
-  ColorlockZoomVector: {x: 2880, y: 2700, z: -10}
-  OpenDiary1: {x: 2880, y: 3240, z: -10}
-  OpenDiary2: {x: 2880, y: 4320, z: -10}
-  OpenDiary3: {x: 2880, y: 5400, z: -10}
-  colorlockzoombutton: {fileID: 748242573}
-  opendiarybutton: {fileID: 0}
   DiaryUnlocked: 0
 --- !u!114 &1028922557
 MonoBehaviour:
@@ -4248,7 +4896,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1243882813}
-  m_RootOrder: 3
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -4325,17 +4973,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   camra: {fileID: 1609351147}
   clscript: {fileID: 0}
-  ShelfExitZoomVector: {x: 960, y: 540, z: -10}
-  Shelf2ZoomVector: {x: 960, y: 2700, z: -10}
-  Shelf3ZoomVector: {x: 960, y: 1620, z: -10}
-  BedroomRoom2Vector: {x: 2880, y: 540, z: -10}
-  DiaryZoomVector: {x: 2880, y: 1620, z: -10}
-  ColorlockZoomVector: {x: 2880, y: 2700, z: -10}
-  OpenDiary1: {x: 2880, y: 3240, z: -10}
-  OpenDiary2: {x: 2880, y: 4320, z: -10}
-  OpenDiary3: {x: 2880, y: 5400, z: -10}
-  colorlockzoombutton: {fileID: 0}
-  opendiarybutton: {fileID: 0}
   DiaryUnlocked: 0
 --- !u!114 &1147076545
 MonoBehaviour:
@@ -4617,6 +5254,9 @@ RectTransform:
   m_Children:
   - {fileID: 690922572}
   - {fileID: 2029855050}
+  - {fileID: 1790883862}
+  - {fileID: 223142898}
+  - {fileID: 483973902}
   - {fileID: 62051539}
   - {fileID: 1147076542}
   m_Father: {fileID: 219579754}
@@ -5012,17 +5652,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   camra: {fileID: 1609351147}
   clscript: {fileID: 0}
-  ShelfExitZoomVector: {x: 960, y: 540, z: -10}
-  Shelf2ZoomVector: {x: 960, y: 2700, z: -10}
-  Shelf3ZoomVector: {x: 960, y: 1620, z: -10}
-  BedroomRoom2Vector: {x: 2880, y: 540, z: -10}
-  DiaryZoomVector: {x: 2880, y: 1620, z: -10}
-  ColorlockZoomVector: {x: 2880, y: 2700, z: -10}
-  OpenDiary1: {x: 2880, y: 3240, z: -10}
-  OpenDiary2: {x: 2880, y: 4320, z: -10}
-  OpenDiary3: {x: 2880, y: 5400, z: -10}
-  colorlockzoombutton: {fileID: 748242573}
-  opendiarybutton: {fileID: 1315761091}
   DiaryUnlocked: 0
 --- !u!114 &1267660009
 MonoBehaviour:
@@ -5253,17 +5882,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   camra: {fileID: 1609351147}
   clscript: {fileID: 0}
-  ShelfExitZoomVector: {x: 960, y: 540, z: -10}
-  Shelf2ZoomVector: {x: 960, y: 1620, z: -10}
-  Shelf3ZoomVector: {x: 960, y: 1620, z: -10}
-  BedroomRoom2Vector: {x: 2880, y: 540, z: -10}
-  DiaryZoomVector: {x: 2880, y: 1620, z: -10}
-  ColorlockZoomVector: {x: 2880, y: 2700, z: -10}
-  OpenDiary1: {x: 2880, y: 3240, z: -10}
-  OpenDiary2: {x: 2880, y: 4320, z: -10}
-  OpenDiary3: {x: 2880, y: 5400, z: -10}
-  colorlockzoombutton: {fileID: 0}
-  opendiarybutton: {fileID: 1315761091}
   DiaryUnlocked: 0
 --- !u!61 &1315761093
 BoxCollider2D:
@@ -5596,9 +6214,9 @@ RectTransform:
   m_Father: {fileID: 2043933779}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -350, y: -460}
+  m_AnchorMin: {x: 1, y: 0.5}
+  m_AnchorMax: {x: 1, y: 0.5}
+  m_AnchoredPosition: {x: -575, y: -460}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1440770453
@@ -6273,17 +6891,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   camra: {fileID: 1609351147}
   clscript: {fileID: 0}
-  ShelfExitZoomVector: {x: 960, y: 540, z: -10}
-  Shelf2ZoomVector: {x: 960, y: 2700, z: -10}
-  Shelf3ZoomVector: {x: 960, y: 1620, z: -10}
-  BedroomRoom2Vector: {x: 2880, y: 540, z: -10}
-  DiaryZoomVector: {x: 2880, y: 1620, z: -10}
-  ColorlockZoomVector: {x: 2880, y: 2700, z: -10}
-  OpenDiary1: {x: 2880, y: 3240, z: -10}
-  OpenDiary2: {x: 2880, y: 4320, z: -10}
-  OpenDiary3: {x: 2880, y: 5400, z: -10}
-  colorlockzoombutton: {fileID: 0}
-  opendiarybutton: {fileID: 0}
   DiaryUnlocked: 0
 --- !u!114 &1538664590
 MonoBehaviour:
@@ -6567,17 +7174,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   camra: {fileID: 1609351147}
   clscript: {fileID: 0}
-  ShelfExitZoomVector: {x: 960, y: 540, z: -10}
-  Shelf2ZoomVector: {x: 960, y: 1620, z: -10}
-  Shelf3ZoomVector: {x: 960, y: 1620, z: -10}
-  BedroomRoom2Vector: {x: 2880, y: 540, z: -10}
-  DiaryZoomVector: {x: 2880, y: 1620, z: -10}
-  ColorlockZoomVector: {x: 2880, y: 2700, z: -10}
-  OpenDiary1: {x: 2880, y: 3240, z: -10}
-  OpenDiary2: {x: 2880, y: 4320, z: -10}
-  OpenDiary3: {x: 2880, y: 5400, z: -10}
-  colorlockzoombutton: {fileID: 0}
-  opendiarybutton: {fileID: 0}
   DiaryUnlocked: 0
 --- !u!61 &1560988021
 BoxCollider2D:
@@ -6742,17 +7338,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   camra: {fileID: 1609351147}
   clscript: {fileID: 0}
-  ShelfExitZoomVector: {x: 960, y: 540, z: -10}
-  Shelf2ZoomVector: {x: 0, y: 1620, z: 0}
-  Shelf3ZoomVector: {x: 0, y: 1620, z: 0}
-  BedroomRoom2Vector: {x: 2880, y: 540, z: -10}
-  DiaryZoomVector: {x: 2880, y: 1620, z: -10}
-  ColorlockZoomVector: {x: 2880, y: 2700, z: -10}
-  OpenDiary1: {x: 2880, y: 3240, z: -10}
-  OpenDiary2: {x: 2880, y: 4320, z: -10}
-  OpenDiary3: {x: 2880, y: 5400, z: -10}
-  colorlockzoombutton: {fileID: 0}
-  opendiarybutton: {fileID: 0}
   DiaryUnlocked: 0
 --- !u!1 &1614377573
 GameObject:
@@ -6966,6 +7551,182 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1637824489}
   m_CullTransparentMesh: 1
+--- !u!1 &1790883861
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1790883862}
+  - component: {fileID: 1790883867}
+  - component: {fileID: 1790883866}
+  - component: {fileID: 1790883865}
+  - component: {fileID: 1790883864}
+  - component: {fileID: 1790883863}
+  m_Layer: 5
+  m_Name: STBlueHB
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1790883862
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790883861}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1243882813}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -13.5844, y: -268.7979}
+  m_SizeDelta: {x: 150.8776, y: 293.8302}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1790883863
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790883861}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 1790883866}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 690922573}
+        m_TargetAssemblyTypeName: ShelfClicked, Assembly-CSharp
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1790883864
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790883861}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6e0bafebf6ce9242a3047ec4888f6bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  camra: {fileID: 1609351147}
+  clscript: {fileID: 765807032}
+  DiaryUnlocked: 0
+--- !u!61 &1790883865
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790883861}
+  m_Enabled: 0
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 300, y: 545}
+  m_EdgeRadius: 0
+--- !u!114 &1790883866
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790883861}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1790883867
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790883861}
+  m_CullTransparentMesh: 1
 --- !u!1 &1809990019
 GameObject:
   m_ObjectHideFlags: 0
@@ -7076,17 +7837,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   camra: {fileID: 1609351147}
   clscript: {fileID: 0}
-  ShelfExitZoomVector: {x: 960, y: 540, z: -10}
-  Shelf2ZoomVector: {x: 960, y: 2700, z: -10}
-  Shelf3ZoomVector: {x: 960, y: 1620, z: -10}
-  BedroomRoom2Vector: {x: 2880, y: 540, z: -10}
-  DiaryZoomVector: {x: 2880, y: 1620, z: -10}
-  ColorlockZoomVector: {x: 2880, y: 2700, z: -10}
-  OpenDiary1: {x: 2880, y: 3240, z: -10}
-  OpenDiary2: {x: 2880, y: 4320, z: -10}
-  OpenDiary3: {x: 2880, y: 5400, z: -10}
-  colorlockzoombutton: {fileID: 0}
-  opendiarybutton: {fileID: 0}
   DiaryUnlocked: 0
 --- !u!114 &1809990023
 MonoBehaviour:
@@ -7283,17 +8033,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   camra: {fileID: 1609351147}
   clscript: {fileID: 0}
-  ShelfExitZoomVector: {x: 960, y: 540, z: -10}
-  Shelf2ZoomVector: {x: 960, y: 2700, z: -10}
-  Shelf3ZoomVector: {x: 960, y: 1620, z: -10}
-  BedroomRoom2Vector: {x: 2880, y: 540, z: -10}
-  DiaryZoomVector: {x: 2880, y: 1620, z: -10}
-  ColorlockZoomVector: {x: 2880, y: 2700, z: -10}
-  OpenDiary1: {x: 2880, y: 3240, z: -10}
-  OpenDiary2: {x: 2880, y: 4320, z: -10}
-  OpenDiary3: {x: 2880, y: 5400, z: -10}
-  colorlockzoombutton: {fileID: 0}
-  opendiarybutton: {fileID: 0}
   DiaryUnlocked: 0
 --- !u!114 &1892468787
 MonoBehaviour:
@@ -7332,6 +8071,182 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1892468783}
+  m_CullTransparentMesh: 1
+--- !u!1 &1919645946
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1919645947}
+  - component: {fileID: 1919645952}
+  - component: {fileID: 1919645951}
+  - component: {fileID: 1919645950}
+  - component: {fileID: 1919645949}
+  - component: {fileID: 1919645948}
+  m_Layer: 5
+  m_Name: MusicBoxHitbox
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1919645947
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1919645946}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 806793536}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 260.78223, y: -1399.3604}
+  m_SizeDelta: {x: 348.653, y: 220.5073}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1919645948
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1919645946}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 1919645951}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 690922573}
+        m_TargetAssemblyTypeName: ShelfClicked, Assembly-CSharp
+        m_MethodName: MusicBoxZoom
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1919645949
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1919645946}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6e0bafebf6ce9242a3047ec4888f6bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  camra: {fileID: 1609351147}
+  clscript: {fileID: 765807032}
+  DiaryUnlocked: 0
+--- !u!61 &1919645950
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1919645946}
+  m_Enabled: 0
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 300, y: 545}
+  m_EdgeRadius: 0
+--- !u!114 &1919645951
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1919645946}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1919645952
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1919645946}
   m_CullTransparentMesh: 1
 --- !u!1 &2029855049
 GameObject:
@@ -7444,17 +8359,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   camra: {fileID: 1609351147}
   clscript: {fileID: 765807032}
-  ShelfExitZoomVector: {x: 960, y: 540, z: -10}
-  Shelf2ZoomVector: {x: 0, y: 1620, z: 0}
-  Shelf3ZoomVector: {x: 0, y: 1620, z: 0}
-  BedroomRoom2Vector: {x: 2880, y: 540, z: -10}
-  DiaryZoomVector: {x: 2880, y: 1620, z: -10}
-  ColorlockZoomVector: {x: 2880, y: 2700, z: -10}
-  OpenDiary1: {x: 2880, y: 3240, z: -10}
-  OpenDiary2: {x: 2880, y: 4320, z: -10}
-  OpenDiary3: {x: 2880, y: 5400, z: -10}
-  colorlockzoombutton: {fileID: 748242573}
-  opendiarybutton: {fileID: 0}
   DiaryUnlocked: 0
 --- !u!61 &2029855053
 BoxCollider2D:
@@ -7552,6 +8456,8 @@ MonoBehaviour:
   isFull: 00
   slots:
   - {fileID: 1383057639}
+  - {fileID: 770264978}
+  - {fileID: 246671049}
 --- !u!4 &2041159778
 Transform:
   m_ObjectHideFlags: 0
@@ -7599,6 +8505,8 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1383057642}
+  - {fileID: 770264979}
+  - {fileID: 246671052}
   m_Father: {fileID: 1265968936}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -8110,17 +9018,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   camra: {fileID: 1609351147}
   clscript: {fileID: 0}
-  ShelfExitZoomVector: {x: 960, y: 540, z: -10}
-  Shelf2ZoomVector: {x: 960, y: 2700, z: -10}
-  Shelf3ZoomVector: {x: 960, y: 1620, z: -10}
-  BedroomRoom2Vector: {x: 2880, y: 540, z: -10}
-  DiaryZoomVector: {x: 2880, y: 1620, z: -10}
-  ColorlockZoomVector: {x: 2880, y: 2700, z: -10}
-  OpenDiary1: {x: 2880, y: 3240, z: -10}
-  OpenDiary2: {x: 2880, y: 4320, z: -10}
-  OpenDiary3: {x: 2880, y: 5400, z: -10}
-  colorlockzoombutton: {fileID: 0}
-  opendiarybutton: {fileID: 0}
   DiaryUnlocked: 0
 --- !u!114 &2064445889
 MonoBehaviour:
@@ -8270,17 +9167,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   camra: {fileID: 1609351147}
   clscript: {fileID: 0}
-  ShelfExitZoomVector: {x: 960, y: 540, z: -10}
-  Shelf2ZoomVector: {x: 960, y: 2700, z: -10}
-  Shelf3ZoomVector: {x: 960, y: 1620, z: -10}
-  BedroomRoom2Vector: {x: 2880, y: 540, z: -10}
-  DiaryZoomVector: {x: 2880, y: 1620, z: -10}
-  ColorlockZoomVector: {x: 2880, y: 2700, z: -10}
-  OpenDiary1: {x: 2880, y: 3240, z: -10}
-  OpenDiary2: {x: 2880, y: 4320, z: -10}
-  OpenDiary3: {x: 2880, y: 5400, z: -10}
-  colorlockzoombutton: {fileID: 0}
-  opendiarybutton: {fileID: 0}
   DiaryUnlocked: 0
 --- !u!114 &2100507415
 MonoBehaviour:
