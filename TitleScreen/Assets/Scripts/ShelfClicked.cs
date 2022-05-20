@@ -29,7 +29,7 @@ public class ShelfClicked : MonoBehaviour
         colorlockzoombutton = GameObject.FindGameObjectWithTag("Colorlockbutton").GetComponent<Button>();
         opendiarybutton = GameObject.FindGameObjectWithTag("OpenDiaryButton").GetComponent<Button>();
         opendiarybutton.enabled = false;
-        Debug.Log(opendiarybutton.enabled);
+
     }
     public void Shelf_ExitZoom(){
         camra.transform.position = ShelfExitZoomVector;
@@ -99,7 +99,6 @@ public class ShelfClicked : MonoBehaviour
             colorlockzoombutton.enabled = false;
             DiaryZoom();
             opendiarybutton.enabled = true;
-            Debug.Log(opendiarybutton.enabled);
             DiaryUnlocked = true;
 
         }

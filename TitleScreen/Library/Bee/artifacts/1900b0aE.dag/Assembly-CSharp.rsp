@@ -361,6 +361,7 @@
 "Assets/Scripts/Pickup.cs"
 "Assets/Scripts/SettingsMEnu.cs"
 "Assets/Scripts/ShelfClicked.cs"
+"Assets/Scripts/SlotsScript.cs"
 "Assets/Scripts/UI_InputWindow.cs"
 -langversion:9.0
 

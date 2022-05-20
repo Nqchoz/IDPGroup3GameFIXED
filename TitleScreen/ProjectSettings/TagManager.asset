@@ -17,6 +17,8 @@ TagManager:
   - CancelButton
   - Title
   - InputField
+  - SlotsScript
+  - ItemHandle
   layers:
   - Default
   - TransparentFX
