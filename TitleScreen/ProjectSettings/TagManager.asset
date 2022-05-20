@@ -12,6 +12,11 @@ TagManager:
   - ColorlockScript
   - Colorlockbutton
   - OpenDiaryButton
+  - MovementScript
+  - OkButton
+  - CancelButton
+  - Title
+  - InputField
   layers:
   - Default
   - TransparentFX

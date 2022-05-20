@@ -8,6 +8,8 @@ public class Pickup : MonoBehaviour
     public Inventory inventory;
     public GameObject itemButton;
     public GameObject HintIcon;
+    public GameObject itemHandle;
+    public bool handleacquired;
 
     public void Start(){
 
@@ -29,6 +31,25 @@ public class Pickup : MonoBehaviour
 
 
     }
+     public void HandleToInv(){
+       
+        for (int i = 0; i < inventory.slots.Length; i++){
+            if (inventory.isFull[i] == false){
+                inventory.isFull[i] = true;
+                Instantiate(itemHandle, inventory.slots[i].transform, false);
+                handleacquired = true;
+                Debug.Log("Handle Acquired");
+                break;
+            }
+        }
+
+    
+
+    }
+
+
+
+
     public void HintToInv(){
     
         for (int i = 0; i < inventory.slots.Length; i++){
