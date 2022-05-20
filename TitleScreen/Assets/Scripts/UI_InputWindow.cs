@@ -39,13 +39,24 @@ public class UI_InputWindow : MonoBehaviour
         gameObject.SetActive(false);
     }
 
-    public void onOkClicked(Action<string> onOk){
-        Hide();
-        onOk(inputField.text);
+    public void onOkClicked(){
+        if (inputField.text == "macky"){
+            Hide();
+
+        }
+        else{
+            inputField.text = "INCORRECT. TRY AGAIN SCHMUCK";
+        }
+        
 
     }
     public void onCancelClicked(){
         Hide();
+
+    }
+    public void testing(){
+
+        Show("Enter Password", "5 Letters", "abcdefghijklmnopqrstuvwxyz", 5);
 
     }
     private char ValidateChar(string validCharacters, char addedChar){
@@ -62,6 +73,6 @@ public class UI_InputWindow : MonoBehaviour
    
 
 
-
+    public delegate char onValidateInput(string text, int charIndex, char addedChar);
 
 }

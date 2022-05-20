@@ -19,22 +19,24 @@ public class Musicboxscript : MonoBehaviour
         pickupscript = GameObject.FindGameObjectWithTag("pickupscript").GetComponent<Pickup>();
         movementscript = GameObject.FindGameObjectWithTag("MovementScript").GetComponent<ShelfClicked>();
         OpenTextFieldBTN = GameObject.Find("MusicBoxInteractHB").GetComponent<Button>();
-        OpenTextFieldBTN.enabled = false;
    }
 
     public void MusicBoxInteract(){
         if (pickupscript.handleacquired && movementscript.camra.transform.position == movementscript.MusicBoxZoom1 && alreadychanged == false){
             Musicbox.GetComponent<Image>().sprite = MBWithHandle;
-            OpenTextFieldBTN.enabled = true;
+            alreadychanged = true;
             
         }
-        else if (pickupscript.handleacquired && movementscript.camra.transform.position == movementscript.MusicBoxZoom1 && alreadychanged == true){
+    }
+    public void MusicBoxInteract2(){
+        if (alreadychanged == true){
             Debug.Log("buttonworks");
-            inputWindow.Show("Enter PASSCODE", "5 letters", "abcdefghijklmnopqrstuvwxyz", 5);
+            inputWindow.testing();
         }
 
-
     }
+
+    
 
     public delegate char onValidateInput(string text, int charIndex, char addedChar);
 
