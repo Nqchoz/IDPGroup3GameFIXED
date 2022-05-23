@@ -7,7 +7,7 @@ public class SlotsScript : MonoBehaviour
 {
     private Inventory inventory;
     public int slotnumber;
-    private HeldHandle = GameObject.FindGameObjectWithTag("ItemHandle");
+    public Pickup pickupscript;
 
 
     // Start is called before the first frame update
@@ -25,7 +25,7 @@ public class SlotsScript : MonoBehaviour
         }   
     }
     public void DestroyHandle(){
-        GameObject.Destroy(HeldHandle);  
+        Destroy(pickupscript.HandleClone);
     }
 
     

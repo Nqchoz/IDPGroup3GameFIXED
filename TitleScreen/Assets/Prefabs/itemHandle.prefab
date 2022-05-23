@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 9190307960029571519}
   - component: {fileID: 9190307960029571518}
   - component: {fileID: 9190307960029571516}
+  - component: {fileID: 8164924968559349442}
   m_Layer: 5
   m_Name: itemHandle
   m_TagString: Untagged
@@ -121,9 +122,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 11500000, guid: 39807b123bf2cfc4b94cde17ca720faf, type: 3}
+      - m_Target: {fileID: 8164924968559349442}
         m_TargetAssemblyTypeName: Musicboxscript, Assembly-CSharp
-        m_MethodName: 
+        m_MethodName: MusicBoxInteract
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -133,3 +134,23 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &8164924968559349442
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9190307960029571512}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39807b123bf2cfc4b94cde17ca720faf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inputWindow: {fileID: 0}
+  pickupscript: {fileID: 0}
+  movementscript: {fileID: 0}
+  Musicbox: {fileID: 0}
+  MBWithHandle: {fileID: 21300000, guid: 57339f2a7853c8640b80abf13168db2c, type: 3}
+  OpenTextFieldBTN: {fileID: 0}
+  slotsscript: {fileID: 0}
+  HeldHandle: {fileID: 0}

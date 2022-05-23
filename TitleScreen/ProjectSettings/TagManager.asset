@@ -19,6 +19,7 @@ TagManager:
   - InputField
   - SlotsScript
   - ItemHandle
+  - MusicBoxZoomed
   layers:
   - Default
   - TransparentFX
