@@ -7,7 +7,7 @@ using TMPro;
 
 public class UI_InputWindow : MonoBehaviour
 { 
-
+    public Musicboxscript MBScript;
     public Button okBtn;
     public Button cancelBtn;
     public TextMeshProUGUI titleText;
@@ -21,16 +21,17 @@ public class UI_InputWindow : MonoBehaviour
         Hide();
 
     }
-
+    //show the window with the set parameters
     public void Show(string titleString, string inputString, string validCharacters, int characterLimit){
         gameObject.SetActive(true);
         titleText.text = titleString;
         inputField.characterLimit = characterLimit;
         inputField.onValidateInput = (string text, int charIndex, char addedChar)=>{
+            //test for valid characters
             return ValidateChar(validCharacters, addedChar);
 
         };
-
+        
         inputField.text = inputString;
 
     }
@@ -41,11 +42,13 @@ public class UI_InputWindow : MonoBehaviour
 
     public void onOkClicked(){
         if (inputField.text == "macky"){
+            //if answer is correct
             Hide();
+            MBScript.SolvedMusicBox();
 
         }
         else{
-            inputField.text = "INCORRECT. TRY AGAIN SCHMUCK";
+            inputField.text = "INCORRECT.";
         }
         
 
@@ -55,11 +58,12 @@ public class UI_InputWindow : MonoBehaviour
 
     }
     public void testing(){
-
+        //show the window with the parameters set to the following values
         Show("Enter Password", "5 Letters", "abcdefghijklmnopqrstuvwxyz", 5);
 
     }
     private char ValidateChar(string validCharacters, char addedChar){
+        //if the character inputted is in the string of valid characters
         if (validCharacters.IndexOf(addedChar)!= -1){
             //valid
             return addedChar;

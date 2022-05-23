@@ -9,9 +9,11 @@ public class Musicboxscript : MonoBehaviour
 
    public Pickup pickupscript;
    public ShelfClicked movementscript;
-   bool alreadychanged;
    public Image Musicbox;
    public Sprite MBWithHandle;
+   public Sprite[] OMB; // all of the possible open box sprites
+   public bool[] taken; // is key/paper taken?
+   private Button[] items;
    public Button OpenTextFieldBTN;
    public SlotsScript slotsscript;
    public GameObject HeldHandle;
@@ -23,26 +25,29 @@ public class Musicboxscript : MonoBehaviour
         OpenTextFieldBTN = GameObject.Find("MusicBoxInteractHB").GetComponent<Button>();
         slotsscript = GameObject.FindGameObjectWithTag("SlotsScript").GetComponent<SlotsScript>();
         Musicbox = GameObject.FindWithTag("MusicBoxZoomed").GetComponent<Image>();
+        OpenTextFieldBTN.enabled = false;
    }
 
     public void MusicBoxInteract(){
-        if (pickupscript.handleacquired && movementscript.camra.transform.position == movementscript.MusicBoxZoom1 && alreadychanged == false){
+        //add handle to the music box
+        if (pickupscript.handleacquired && movementscript.camra.transform.position == movementscript.MusicBoxZoom1){
             Musicbox.GetComponent<Image>().sprite = MBWithHandle;
             slotsscript.DestroyHandle();
-            alreadychanged = true;
-            Debug.Log(alreadychanged);
+            OpenTextFieldBTN.enabled = true;
+        
         }
     }
+
     public void MusicBoxInteract2(){
-        if (alreadychanged == true){
-            Debug.Log("InputWindowBrokey");
-            inputWindow.testing();
-            
-            
-        }
-        else{
-            Debug.Log("buttonworks");
-        }
+        //open the input field/text window
+        Debug.Log("InputWindowBrokey");
+        inputWindow.testing();
+
+    }
+
+    public void SolvedMusicBox(){
+        OpenTextFieldBTN.enabled = false;
+        Musicbox.GetComponent<Image>().sprite = OMB[0];
 
     }
 

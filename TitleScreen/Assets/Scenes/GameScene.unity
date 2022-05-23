@@ -1725,6 +1725,12 @@ MonoBehaviour:
   movementscript: {fileID: 690922573}
   Musicbox: {fileID: 806793537}
   MBWithHandle: {fileID: 21300000, guid: 57339f2a7853c8640b80abf13168db2c, type: 3}
+  OMB:
+  - {fileID: 21300000, guid: 8360e7990fa553a4a86774aafcb2ab8a, type: 3}
+  - {fileID: 21300000, guid: 2b8837b24886a96439a7a9e1ec819379, type: 3}
+  - {fileID: 21300000, guid: 0957f60cbf7e89c4aa5589ce147a9ea5, type: 3}
+  - {fileID: 21300000, guid: e33cb0346d43e0843994e08fa2952cc3, type: 3}
+  taken: 0000
   OpenTextFieldBTN: {fileID: 1517403545}
   slotsscript: {fileID: 0}
   HeldHandle: {fileID: 0}
@@ -10942,6 +10948,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc522d2280896354fb418a6fce6d0faf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MBScript: {fileID: 410845757}
   okBtn: {fileID: 794322009}
   cancelBtn: {fileID: 108732648}
   titleText: {fileID: 937281657}
