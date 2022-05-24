@@ -11,6 +11,7 @@ public class Pickup : MonoBehaviour
     public GameObject itemHandle;
     public bool handleacquired;
     public GameObject HandleClone;
+    public bool Room2Access;
 
     public void Start(){
 
@@ -57,6 +58,19 @@ public class Pickup : MonoBehaviour
             if (inventory.isFull[i] == false){
                 inventory.isFull[i] = true;
                 Instantiate(HintIcon, inventory.slots[i].transform, false);
+                break;
+            }
+        }
+
+    }
+
+    public void ItemToInv(GameObject ItemPrefab) {
+    
+        for (int i = 0; i < inventory.slots.Length; i++){
+            if (inventory.isFull[i] == false){
+                inventory.isFull[i] = true;
+                Instantiate(ItemPrefab, inventory.slots[i].transform, false);
+                Room2Access = true;
                 break;
             }
         }

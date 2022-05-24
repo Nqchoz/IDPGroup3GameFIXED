@@ -20,6 +20,9 @@ TagManager:
   - SlotsScript
   - ItemHandle
   - MusicBoxZoomed
+  - KeyButton
+  - PicButton
+  - OTFGO
   layers:
   - Default
   - TransparentFX
