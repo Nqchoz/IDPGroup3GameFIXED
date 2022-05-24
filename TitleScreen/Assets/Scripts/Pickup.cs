@@ -12,6 +12,7 @@ public class Pickup : MonoBehaviour
     public bool handleacquired;
     public GameObject HandleClone;
     public bool Room2Access;
+    public GameObject HintClone;
 
     public void Start(){
 
@@ -57,7 +58,7 @@ public class Pickup : MonoBehaviour
         for (int i = 0; i < inventory.slots.Length; i++){
             if (inventory.isFull[i] == false){
                 inventory.isFull[i] = true;
-                Instantiate(HintIcon, inventory.slots[i].transform, false);
+                HintClone = Instantiate(HintIcon, inventory.slots[i].transform, false);
                 break;
             }
         }

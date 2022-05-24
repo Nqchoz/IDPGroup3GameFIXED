@@ -15,6 +15,7 @@ public class Colorlock : MonoBehaviour
     public TextMeshProUGUI slot3textbox;
     public TextMeshProUGUI slot4textbox;
     public bool Locksolved;
+    public Hints Hintsscript;
 
     void Awake(){
         slot1 = 0;
@@ -22,6 +23,7 @@ public class Colorlock : MonoBehaviour
         slot3 = 0;
         slot4 = 0;
         Locksolved = false;
+        Hintsscript = GameObject.Find("HintPopup").GetComponent<Hints>();
     }
     
     public void slot1clicked(){
@@ -137,7 +139,7 @@ public class Colorlock : MonoBehaviour
 
     void Update(){
         if (slot1 == 9 && slot2 == 6 && slot3 == 3 && slot4 == 7 && Locksolved == false){
-            Debug.Log("Solved!");
+            Hintsscript.UpdateHint();
             Locksolved = true;
         }
     }

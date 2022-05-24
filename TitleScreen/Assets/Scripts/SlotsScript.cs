@@ -8,12 +8,14 @@ public class SlotsScript : MonoBehaviour
     private Inventory inventory;
     public int slotnumber;
     public Pickup pickupscript;
+   
 
 
     // Start is called before the first frame update
     void Start()
     {
         inventory = GameObject.FindGameObjectWithTag("Player").GetComponent<Inventory>();
+        
     }
 
     // Update is called once per frame
@@ -27,6 +29,8 @@ public class SlotsScript : MonoBehaviour
     public void DestroyHandle(){
         Destroy(pickupscript.HandleClone);
     }
-
+    public void DestroyHint(){
+        Destroy(pickupscript.HintClone);
+    }
     
 }
