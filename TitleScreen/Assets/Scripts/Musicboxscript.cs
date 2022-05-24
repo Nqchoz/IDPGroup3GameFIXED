@@ -21,6 +21,7 @@ public class Musicboxscript : MonoBehaviour
    private SlotsScript slotsscript;
    public GameObject KeyItem;
    public GameObject PicItem;
+   private Hints hintsscript;
 
    
 
@@ -36,6 +37,7 @@ public class Musicboxscript : MonoBehaviour
         PicButton = GameObject.FindWithTag("PicButton").GetComponent<Button>();
         KeyButton.enabled = false;
         PicButton.enabled = false;
+        hintsscript = GameObject.Find("HintPopup").GetComponent<Hints>();
    }
 
     public void MusicBoxInteract(){
@@ -43,6 +45,7 @@ public class Musicboxscript : MonoBehaviour
         if (pickupscript.handleacquired && movementscript.camra.transform.position == movementscript.MusicBoxZoom1){
             Musicbox.GetComponent<Image>().sprite = MBWithHandle;
             slotsscript.DestroyHandle();
+            hintsscript.UpdateHint();
             OpenTextFieldBTN.enabled = true;
         
         }

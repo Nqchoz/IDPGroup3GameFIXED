@@ -23,7 +23,6 @@ public class Hints : MonoBehaviour
     public Button hintbutton;
     public Pickup pickupscript;
     public SlotsScript slotsscript;
-    public Hints hintsscript2;
     
 
 
@@ -37,7 +36,7 @@ public class Hints : MonoBehaviour
         HintBox = GameObject.Find("HintBubble").GetComponent<Canvas>();
         hintbutton = GameObject.Find("HintButton").GetComponent<Button>();
         slotsscript = GameObject.Find("SlotsScript").GetComponent<SlotsScript>();
-        hintsscript2 = GameObject.Find("HintClone").GetComponent<Hints>();
+        
 
     }
 
@@ -55,15 +54,17 @@ public class Hints : MonoBehaviour
 
     public void invhint(){
         StartCoroutine(showbubble());
+        StartCoroutine(AntiSpam());
+
     }
     public void UpdateHint(){
         slotsscript.DestroyHint();
         indexhint++;
+        Debug.Log(indexhint);
 
     }
 
     IEnumerator showbubble(){
-        Debug.Log(indexhint);
         HintTextBox.text = hintinfo[indexhint];
         HintBoxGroup.alpha = 0;
         HintBox.enabled = true;
@@ -78,7 +79,7 @@ public class Hints : MonoBehaviour
             HintBoxGroup.alpha -= (float)0.15;
             yield return new WaitForSeconds((float)0.03);
         }
-
+        pickupscript.HintClone.GetComponent<Button>().enabled = true;
         HintBox.enabled = false;
         hintbutton.interactable = true;
         
@@ -89,6 +90,12 @@ public class Hints : MonoBehaviour
     IEnumerator AntiDuplication(){
         yield return new WaitForSeconds((float)4.3);
         pickupscript.HintToInv();
+    }
+     IEnumerator AntiSpam(){
+        pickupscript.HintClone.GetComponent<Button>().enabled = false;
+        yield return new WaitForSeconds((float)4.3);
+        pickupscript.HintClone.GetComponent<Button>().enabled = true;
+    
     }
 
 

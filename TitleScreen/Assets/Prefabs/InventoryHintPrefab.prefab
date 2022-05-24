@@ -122,9 +122,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2180178993656922236}
-        m_TargetAssemblyTypeName: Hints, Assembly-CSharp
-        m_MethodName: invhint
+      - m_Target: {fileID: 3639442672000533499}
+        m_TargetAssemblyTypeName: AccessHint, Assembly-CSharp
+        m_MethodName: InvHintGet
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -143,7 +143,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8333224810482067177}
-  - component: {fileID: 2180178993656922236}
+  - component: {fileID: 3639442672000533499}
   m_Layer: 0
   m_Name: HintScript
   m_TagString: Untagged
@@ -166,7 +166,7 @@ Transform:
   m_Father: {fileID: 6875222883989731106}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2180178993656922236
+--- !u!114 &3639442672000533499
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -175,25 +175,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 8767318297415847866}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 64fa0335f93629f4fa52bf15f0a42bc4, type: 3}
+  m_Script: {fileID: 11500000, guid: 16449e0faec448c4eafaa07b31cc09cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hintinfo:
-  - If you don't get out of here, you may never see this color outside again.
-  - "These books have the same color as the diary's lock\u2026"
-  - "These pages don't seem to be in order\u2026"
-  - It's pretty dark in here, maybe I can figure out how to turn the lights on...
-  - Maybe you can slide these boxes enough so you can pass through.
-  - Think about the first letter of each drawing..
-  - Put the pieces of the photo together. There's more than just a picture.
-  - Huh, since when did the clock start to chime? It hasn't even struck 12!
-  - Your mom really cares about you, even if it doesn't seem like it.
-  hintdeduct: 1e0000003c0000003c0000003c0000003c0000003c0000001e0000003c0000003c000000
-  AlreadyHinted: 000000000000000000
-  obj1: {fileID: 0}
-  HintBox: {fileID: 0}
-  HintBoxGroup: {fileID: 0}
-  HintTextBox: {fileID: 0}
-  hintbutton: {fileID: 0}
-  pickupscript: {fileID: 0}
-  slotsscript: {fileID: 0}
+  hintsscript: {fileID: 0}
