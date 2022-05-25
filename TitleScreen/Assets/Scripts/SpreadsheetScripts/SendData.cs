@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 
 public class SendData: MonoBehaviour
 {
-    [SerializeField] InputField username;
+    [SerializeField] InputField enteredusername;
     [SerializeField] InputField puzzle1;
     [SerializeField] InputField puzzle2;
     [SerializeField] InputField puzzle3;
@@ -16,7 +16,7 @@ public class SendData: MonoBehaviour
 
     public void Send()
     {
-        StartCoroutine(Post(username.text, puzzle1.text, puzzle2.text, puzzle3.text));
+        StartCoroutine(Post(UsernameScript.enteredusername, puzzle1.text, puzzle2.text, puzzle3.text));
     }
 
     IEnumerator Post(string s1, string s2, string s3, string s4)
