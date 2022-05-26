@@ -32,5 +32,17 @@ public class SlotsScript : MonoBehaviour
     public void DestroyHint(){
         Destroy(pickupscript.HintClone);
     }
+    public void ClearInv(){
+        for (int i = 0; i<2; i++){
+            try{
+               Destroy (pickupscript.heldItems[i]);
+            }
+            finally{
+
+            }
+            
+            
+        }    
+    }
     
 }

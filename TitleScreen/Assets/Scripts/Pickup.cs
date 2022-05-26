@@ -13,6 +13,7 @@ public class Pickup : MonoBehaviour
     public GameObject HandleClone;
     public bool Room2Access;
     public GameObject HintClone;
+    public GameObject[] heldItems;
 
     public void Start(){
 
@@ -70,7 +71,7 @@ public class Pickup : MonoBehaviour
         for (int i = 0; i < inventory.slots.Length; i++){
             if (inventory.isFull[i] == false){
                 inventory.isFull[i] = true;
-                Instantiate(ItemPrefab, inventory.slots[i].transform, false);
+                heldItems[i] = Instantiate(ItemPrefab, inventory.slots[i].transform, false);
                 Room2Access = true;
                 break;
             }
