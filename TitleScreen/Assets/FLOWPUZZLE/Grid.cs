@@ -20,7 +20,7 @@ public class Grid : MonoBehaviour
    public GameObject[,] board = new GameObject[5,5];
    public GameObject[] linePrefs;
    private int gridsquare;
-   private bool isArrayEqual;
+   private int isArrayEqual;
    private GameObject[,] testingClones = new GameObject[5,5];
    public Room2Movement Room2M;
    public Sprite lightsOn;
@@ -33,11 +33,12 @@ public class Grid : MonoBehaviour
    }
    void Update(){
        UpdateGameBoard();
-       if (isArrayEqual){
-           win();
-       }
+        if (isArrayEqual == 25){
+            win();
+        }
    }
     public void UpdateGameBoard(){
+        isArrayEqual = 0;
         for (int y = 0; y <5; y++){
             for (int x = 0; x < 5; x++){
                 Destroy(testingClones[x,y]);
@@ -46,16 +47,16 @@ public class Grid : MonoBehaviour
         }
         for (int y = 0; y <5; y++){
             for (int x = 0; x < 5; x++){
-	    	    // set true if each corresponding
-	    		//elements of arrays are equal
+	    	    
 	    		if (winboard[x, y] != gameboard[x, y]) {
-	    			isArrayEqual = false;
+	    			break;
 	        	}
                 else{
-                    isArrayEqual = true;
+                    isArrayEqual ++;
                 }
             }
         }
+       
     }
     public void ClearBoard(){
         gridsquare = 1;
