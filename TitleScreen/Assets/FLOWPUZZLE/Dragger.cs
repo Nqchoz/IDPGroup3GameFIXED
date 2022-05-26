@@ -34,7 +34,7 @@ public class Dragger : MonoBehaviour
                if (GetMousePos().x <= Mathf.RoundToInt((grid.board[x,y].transform.position.x/(float)10)+3) && GetMousePos().x >= Mathf.RoundToInt((grid.board[x,y].transform.position.x/(float)10)-3)
                && GetMousePos().y == Mathf.RoundToInt(grid.board[x,y].transform.position.y/(float)100.7))
                 {
-                    for (int i = 6; i <11; i++)    
+                    for (int i = 6; i <11; i++){   
                         if (grid.gameboard[x,y] == i&& enabledVar == false){
                             colorVar = i-5;
                             enabledVar = true;
@@ -49,7 +49,12 @@ public class Dragger : MonoBehaviour
                         }
                         if(enabledVar == true && grid.gameboard[x,y] == 0){
                             grid.gameboard[x,y] = colorVar;
-                        }    
+                        }
+                        else if (enabledVar == true && grid.gameboard[x,y] >= 6 && grid.gameboard[x,y] != (colorVar +5) ){
+                            Debug.Log(grid.gameboard[x,y].ToString() + " = " + (colorVar+5).ToString());
+                            enabledVar = false;
+                        }
+                    }    
                }   
           }
        }

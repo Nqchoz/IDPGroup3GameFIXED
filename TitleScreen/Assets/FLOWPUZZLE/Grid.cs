@@ -70,7 +70,7 @@ public class Grid : MonoBehaviour
 
     public void win(){
         Room2M.EnterBasement();
-        Basement1Image.GetComponent<Image>().sprite = lightsOn;
+        Basement1Image.GetComponent<Image>().color = new Color(255, 255, 255, 100);
     }
 
 
