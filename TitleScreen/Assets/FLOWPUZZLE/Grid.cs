@@ -25,17 +25,26 @@ public class Grid : MonoBehaviour
    public Room2Movement Room2M;
    public Sprite lightsOn;
    public Image Basement1Image;
+   public GameObject Basement2_1Access;
+   public bool didwin;
 
    void Start(){
        ClearBoard();
        Room2M = GameObject.Find("Room2").GetComponent<Room2Movement>();
        Basement1Image = GameObject.Find("Basement1_1").GetComponent<Image>();
+       Basement2_1Access = GameObject.Find("Basement1_1 Back");
+       Basement2_1Access.GetComponent<Image>().color = new Color (255, 255, 255, 0);
+       Basement2_1Access.GetComponent<Button>().enabled = false;
+       didwin = false;
    }
    void Update(){
-       UpdateGameBoard();
-        if (isArrayEqual == 25){
-            win();
-        }
+       if (didwin != true){
+            UpdateGameBoard();
+            if (isArrayEqual == 25){
+                win();
+            }
+       }
+       
    }
     public void UpdateGameBoard(){
         isArrayEqual = 0;
@@ -71,6 +80,9 @@ public class Grid : MonoBehaviour
     public void win(){
         Room2M.EnterBasement();
         Basement1Image.GetComponent<Image>().color = new Color(255, 255, 255, 100);
+        Basement2_1Access.GetComponent<Image>().color = new Color (255, 255, 255, 100);
+        Basement2_1Access.GetComponent<Button>().enabled = true;
+        didwin = true;
     }
 
 

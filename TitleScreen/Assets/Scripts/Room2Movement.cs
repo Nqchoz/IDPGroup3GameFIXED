@@ -22,6 +22,7 @@ public class Room2Movement : MonoBehaviour
         Room1M.camra.transform.position = ElectricalBox;
     }
     public void EnterBasement2(){
-        Room1M.camra.transform.position = Basement2;
+        Room1M.camra.transform.position = new Vector3(960f, -2700f, -10f);
+        
     }
 }
