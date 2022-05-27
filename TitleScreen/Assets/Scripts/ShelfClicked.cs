@@ -23,12 +23,17 @@ public class ShelfClicked : MonoBehaviour
     Button colorlockzoombutton;
     Button opendiarybutton;
     public bool DiaryUnlocked;
+    public bool FoundMB;
+    public bool FoundD;
+    public startDialogue sD;
     
     void Awake(){
         clscript = FindObjectOfType<Colorlock>();
         colorlockzoombutton = GameObject.FindGameObjectWithTag("Colorlockbutton").GetComponent<Button>();
         opendiarybutton = GameObject.FindGameObjectWithTag("OpenDiaryButton").GetComponent<Button>();
         opendiarybutton.enabled = false;
+        sD = GameObject.Find("Dialogue").GetComponent<startDialogue>();
+        FoundD = false;
 
     }
     public void Shelf_ExitZoom(){
@@ -59,6 +64,15 @@ public class ShelfClicked : MonoBehaviour
     {
        
         camra.transform.position = DiaryZoomVector;
+        if (FoundD == false){
+            
+            Debug.Log(gameObject.name);
+            sD.MakeDialogue(GameObject.Find("Diary1").GetComponent<Dialogue>(), new string[] {"Oh. My old diary…", "Welp, it's locked. I don't remember the code… ", "Ugh, there's gotta be something around here that'll help me remember."});
+            FoundD = true;
+            Debug.Log(FoundD);
+            
+            
+        }
         
     }
     
@@ -90,6 +104,14 @@ public class ShelfClicked : MonoBehaviour
     {
        
         camra.transform.position = MusicBoxZoom1;
+        if (FoundMB != true){
+            sD.MakeDialogue(GameObject.Find("MusicBox1").GetComponent<Dialogue>(), new string[] {"Ah, there it is!",
+            "Wait! Nooo! It's missing…", "Sigh, I wonder if I can repair it.", "If only I could just find its handle.", 
+            "Maybe I hid it somewhere and wrote it down in my Diary…"});
+            FoundMB = true;
+            
+            
+        }
         
     }
 

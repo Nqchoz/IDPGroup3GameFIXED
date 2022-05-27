@@ -17,7 +17,7 @@ public class SettingsMEnu : MonoBehaviour
     
     public void ExitToMenu()
     {
-       SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+       SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 2);
     }
 
     public void popup(){

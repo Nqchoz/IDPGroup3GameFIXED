@@ -12,7 +12,7 @@ public class WinDetectScript : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-        if(gameObject.layer == 6)
+        if(gameObject.layer == 8)
         {
             WinBoxes();
             
