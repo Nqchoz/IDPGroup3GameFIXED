@@ -122,9 +122,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 7006757214373148731}
-        m_TargetAssemblyTypeName: ExitPopup, Assembly-CSharp
-        m_MethodName: closePopup
+      - m_Target: {fileID: 231075546169572883}
+        m_TargetAssemblyTypeName: SequenceClose1, Assembly-CSharp
+        m_MethodName: popupexit
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -280,6 +280,7 @@ GameObject:
   - component: {fileID: 14127763848975867}
   - component: {fileID: 7402295608787827599}
   - component: {fileID: 977828786900132317}
+  - component: {fileID: 231075546169572883}
   - component: {fileID: 7006757214373148731}
   m_Layer: 5
   m_Name: Picture1Image
@@ -332,7 +333,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_RaycastPadding: {x: 0, y: 0, z: 180, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -347,6 +348,19 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &231075546169572883
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9171615520934197467}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26d363a1eb3bf5041ab1264729cca95d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  exit: {fileID: 7006757214373148731}
 --- !u!114 &7006757214373148731
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -360,4 +374,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CPpop: {fileID: 9171615520934197467}
-  CPpopCLONE: {fileID: 0}
+  Sequence: {fileID: 0}

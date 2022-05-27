@@ -5,15 +5,23 @@ using UnityEngine;
 public class ExitPopup : MonoBehaviour
 {
    public GameObject CPpop; //popup prefab
-   private GameObject CPpopCLONE; //instantiated prefab
- 
+   public GameObject CPpopCLONE; //instantiated prefab
+   public GameObject Sequence; //popup prefab
+   private GameObject SequenceCLONE; //instantiated prefab
 
    public void openPopup(){
        CPpopCLONE = Instantiate(CPpop, GameObject.Find("Popup").transform, false);
    }
 
    public void closePopup(){
-       Debug.Log("won't destroy");
        Destroy(CPpopCLONE);
+       Debug.Log(CPpopCLONE);
+   }
+   public void openSequence(){
+       SequenceCLONE = Instantiate(Sequence, GameObject.Find("Popup").transform, false);
+   }
+   public void closeSequence(){
+       Debug.Log("won't destroy");
+       Destroy(SequenceCLONE);
    }
 }

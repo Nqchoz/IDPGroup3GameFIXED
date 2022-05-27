@@ -12,13 +12,18 @@ public class Dialogue : MonoBehaviour
     public float typingSpeed;
     public GameObject continueButton;
     public GameObject DialogueGroup;
+    public TextMeshProUGUI speaker;
+    public string speakername;
     
     void Awake(){
         continueButton = GameObject.Find("Continue");
         textDisplay = GameObject.Find("DialogueText").GetComponent<TextMeshProUGUI>();
         DialogueGroup = GameObject.Find("Dialogue");
+        speaker = GameObject.Find("Speaker").GetComponent<TextMeshProUGUI>();
+
     }
     public void DoDialogue(){
+        DialogueGroup.SetActive(true);
         StartCoroutine(Type());
     }
 
@@ -29,6 +34,7 @@ public class Dialogue : MonoBehaviour
     }
 
     IEnumerator Type(){
+        speaker.text = speakername;
         foreach(char letter in sentences[index].ToCharArray()){
             textDisplay.text += letter;
             yield return new WaitForSeconds(typingSpeed);

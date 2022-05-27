@@ -7,6 +7,7 @@ using UnityEngine.SceneManagement;
 
 public class SendData: MonoBehaviour
 {
+    
     [SerializeField] InputField enteredusername;
     [SerializeField] InputField puzzle1;
     [SerializeField] InputField puzzle2;
@@ -17,6 +18,7 @@ public class SendData: MonoBehaviour
     public void Send()
     {
         StartCoroutine(Post(UsernameScript.enteredusername, puzzle1.text, puzzle2.text, puzzle3.text));
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
     IEnumerator Post(string s1, string s2, string s3, string s4)
@@ -26,6 +28,9 @@ public class SendData: MonoBehaviour
         form.AddField("entry.1996965476", s2);
         form.AddField("entry.660436114", s3);
         form.AddField("entry.170883059", s4);
+        
+        
+        
 
         UnityWebRequest www = UnityWebRequest.Post(URL, form);
         

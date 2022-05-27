@@ -12,6 +12,7 @@ public class UI_InputWindow : MonoBehaviour
     public Button cancelBtn;
     public TextMeshProUGUI titleText;
     public TMP_InputField inputField;
+    public String CorrectPass;
 
     private void Awake(){
         okBtn = GameObject.FindGameObjectWithTag("OkButton").GetComponent<Button>();
@@ -41,7 +42,7 @@ public class UI_InputWindow : MonoBehaviour
     }
 
     public void onOkClicked(){
-        if (inputField.text == "macky"){
+        if (inputField.text == CorrectPass.ToString()){
             //if answer is correct
             Hide();
             MBScript.SolvedMusicBox();
@@ -60,6 +61,13 @@ public class UI_InputWindow : MonoBehaviour
     public void testing(){
         //show the window with the parameters set to the following values
         Show("Enter Password", "5 Letters", "abcdefghijklmnopqrstuvwxyz", 5);
+        CorrectPass = "macky";
+
+    }
+    public void ParentsRoom(){
+        //show the window with the parameters set to the following values
+        Show("Enter Password", "6 Letters", "abcdefghijklmnopqrstuvwxyz", 6);
+        CorrectPass = "dcahpb";
 
     }
     private char ValidateChar(string validCharacters, char addedChar){
