@@ -353,6 +353,7 @@
 "Assets/AntiSkip.cs"
 "Assets/FLOWPUZZLE/Dragger.cs"
 "Assets/FLOWPUZZLE/Grid.cs"
+"Assets/Images/Dialogue/Dialogue.cs"
 "Assets/Images/Room1/BlueTimers/BlueSandtimerFlip.cs"
 "Assets/RedKnob.cs"
 "Assets/Scripts/AccessHint.cs"
