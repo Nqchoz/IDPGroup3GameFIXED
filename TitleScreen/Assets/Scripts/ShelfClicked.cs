@@ -26,6 +26,7 @@ public class ShelfClicked : MonoBehaviour
     public bool FoundMB;
     public bool FoundD;
     public startDialogue sD;
+    public DiarySD DiaryDlg; //script responsible for the diary dialogue
     
     void Awake(){
         clscript = FindObjectOfType<Colorlock>();
@@ -33,6 +34,7 @@ public class ShelfClicked : MonoBehaviour
         opendiarybutton = GameObject.FindGameObjectWithTag("OpenDiaryButton").GetComponent<Button>();
         opendiarybutton.enabled = false;
         sD = GameObject.Find("Dialogue").GetComponent<startDialogue>();
+        DiaryDlg = GameObject.Find("Dialogue").GetComponent<DiarySD>();
         FoundD = false;
 
     }
@@ -62,18 +64,10 @@ public class ShelfClicked : MonoBehaviour
     
     public void DiaryZoom()
     {
-       
         camra.transform.position = DiaryZoomVector;
-        if (FoundD == false){
-            
-            Debug.Log(gameObject.name);
-            sD.MakeDialogue(GameObject.Find("Diary1").GetComponent<Dialogue>(), new string[] {"Oh. My old diary…", "Welp, it's locked. I don't remember the code… ", "Ugh, there's gotta be something around here that'll help me remember."});
-            FoundD = true;
-            Debug.Log(FoundD);
-            
-            
+        if (DiaryDlg.FoundD == false){
+            DiaryDlg.startDiary();
         }
-        
     }
     
     public void ColorlockZoom()
@@ -84,8 +78,11 @@ public class ShelfClicked : MonoBehaviour
     }
     public void DiaryPage1()
     {
-       
         camra.transform.position = OpenDiary1;
+        if (DiaryDlg.OpenedD == false){
+            DiaryDlg.openDiary();
+        }
+        
         
     }
     public void DiaryPage2()

@@ -18,10 +18,12 @@ public class startDialogue : MonoBehaviour
     }
 
     public void MakeDialogue(Dialogue dscript1, string[] sent){
-        dscript1.typingSpeed = 0.04f;
-        dscript1.speakername = "Kevin";
-        dscript.sentences =   sent;
-        dscript.index = 0;
-        dscript1.DoDialogue();
+        if (dscript.DialogueGroup.activeSelf == false){    
+            dscript1.typingSpeed = 0.04f;
+            dscript1.speakername = "Kevin";
+            dscript.sentences =   sent;
+            dscript.index = 0;
+            dscript1.DoDialogue();
+        }            
     }
 }
