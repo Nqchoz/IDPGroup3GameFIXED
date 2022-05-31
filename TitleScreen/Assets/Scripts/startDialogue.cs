@@ -11,7 +11,7 @@ public class startDialogue : MonoBehaviour
     void Start()
     {
         dscript = GameObject.Find("Dialogue").GetComponent<Dialogue>();
-        dscript.typingSpeed = 0.04f;
+        dscript.typingSpeed = 0.01f; // set to 0.04
         dscript.speakername = "Kevin";
         dscript.DoDialogue();
         Debug.Log(gameObject.name);
@@ -19,7 +19,7 @@ public class startDialogue : MonoBehaviour
 
     public void MakeDialogue(Dialogue dscript1, string[] sent){
         if (dscript.DialogueGroup.activeSelf == false){    
-            dscript1.typingSpeed = 0.04f;
+            dscript1.typingSpeed = 0.01f; // set to 0.04f
             dscript1.speakername = "Kevin";
             dscript.sentences =   sent;
             dscript.index = 0;

@@ -8,8 +8,8 @@ public class Room2Movement : MonoBehaviour
    Vector3 Basement1 = new Vector3(960f, -540f, -10f);
    Vector3 ElectricalBox = new Vector3(960f, -1620f, -10f);
    Vector3 Basement2 = new Vector3(960f, -2700f, -10f);
-   Vector3 BoxPuzzle = new Vector3(-960, -2700, -10f);
-   Vector3 Hallway = new Vector3(960, -3780, -10f);
+   Vector3 BoxPuzzle = new Vector3(-960f, -2700f, -10f);
+   Vector3 Hallway = new Vector3(960f, -3780f, -10f);
    int CameraSizeNormal = 540;
    int CameraSizeBoxP = 30;
 

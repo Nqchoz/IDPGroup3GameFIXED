@@ -22,7 +22,7 @@ public class Musicboxscript : MonoBehaviour
    public GameObject KeyItem;
    public GameObject PicItem;
    private Hints hintsscript;
-   public startDialogue sD;
+   public DiarySD dodialogue;
 
    
 
@@ -39,7 +39,8 @@ public class Musicboxscript : MonoBehaviour
         KeyButton.enabled = false;
         PicButton.enabled = false;
         hintsscript = GameObject.Find("HintPopup").GetComponent<Hints>();
-        sD = GameObject.Find("Dialogue").GetComponent<startDialogue>();
+        dodialogue = GameObject.Find("Dialogue").GetComponent<DiarySD>();
+        
    }
 
     public void MusicBoxInteract(){
@@ -48,7 +49,7 @@ public class Musicboxscript : MonoBehaviour
             Musicbox.GetComponent<Image>().sprite = MBWithHandle;
             slotsscript.DestroyHandle();
             hintsscript.UpdateHint();
-            sD.MakeDialogue(GameObject.Find("HandleDialogueScript").GetComponent<Dialogue>(), new string[] {"I can't remember why, but I love this song. Wait, why does the music sound so weird?", "Maybe the box is more broken than I thought. Maybe if I can open it up I could fix it."});
+            dodialogue.attachHandle();
             OpenTextFieldBTN.enabled = true;
         
         }
