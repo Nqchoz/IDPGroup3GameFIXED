@@ -587,6 +587,8 @@ MonoBehaviour:
   sentences:
   - "I can\u2019t remember why, but I love this song. Wait, why does the music sound
     so weird?"
+  continueButtonButton: {fileID: 0}
+  continueText: {fileID: 0}
 --- !u!1 &62051538
 GameObject:
   m_ObjectHideFlags: 0
@@ -1637,18 +1639,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.0057715774, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 2.057778, y: 1.1155555}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 1.8894042, y: 1}
   m_EdgeRadius: 0
 --- !u!212 &122789407
 SpriteRenderer:
@@ -1691,8 +1693,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 72efc9ef41b5b134c8c3444cf54a973a, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Sprite: {fileID: 21300000, guid: 8eaacf46f3a26b04dbaae642852e4630, type: 3}
+  m_Color: {r: 0.7735849, g: 0.7735849, b: 0.7735849, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1711,7 +1713,7 @@ Transform:
   m_GameObject: {fileID: 122789402}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -4.5496836, y: -4.7155194, z: 90.424446}
-  m_LocalScale: {x: 10, y: 5, z: 1}
+  m_LocalScale: {x: 5, y: 5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1948118141}
@@ -3520,11 +3522,11 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: 0.02}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.3288889, y: 1.2666667}
+    oldSize: {x: 1.472973, y: 1.4144144}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -3595,7 +3597,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 7e23f0b67b8c88c4db78cc9e834ce37a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 9370c6019893f424bbd76e4f123f9405, type: 3}
   m_Color: {r: 0.8867924, g: 0.839943, b: 0.839943, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -3911,7 +3913,7 @@ MonoBehaviour:
   OpenTextFieldBTNGO: {fileID: 0}
   KeyItem: {fileID: 302045652524131424, guid: 151024c2f97d1b744b1992558247a0eb, type: 3}
   PicItem: {fileID: 9197500031985673349, guid: fa75cf3f7a585e746a68a1b55fefc690, type: 3}
-  dodialogue: {fileID: 0}
+  sD: {fileID: 0}
 --- !u!1 &412601492
 GameObject:
   m_ObjectHideFlags: 0
@@ -6567,6 +6569,8 @@ MonoBehaviour:
   sentences:
   - "Now let\u2019s see."
   - Maybe I had written something about the music box handle.
+  continueButtonButton: {fileID: 0}
+  continueText: {fileID: 0}
 --- !u!114 &682252165
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7341,7 +7345,6 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1322016249}
   - {fileID: 1752121223}
   m_Father: {fileID: 1672020597}
   m_RootOrder: 3
@@ -8401,18 +8404,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: 0.051948637}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 1.5466666, y: 2.3466666}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 1, y: 1.8894043}
   m_EdgeRadius: 0
 --- !u!212 &772904378
 SpriteRenderer:
@@ -8455,7 +8458,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 72efc9ef41b5b134c8c3444cf54a973a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 6cf7debde50cc2b42803eff1f232f474, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -8475,7 +8478,7 @@ Transform:
   m_GameObject: {fileID: 772904373}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -7.0496836, y: 2.7844806, z: 90.424446}
-  m_LocalScale: {x: 5, y: 10, z: 1}
+  m_LocalScale: {x: 5, y: 5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1948118141}
@@ -9006,6 +9009,8 @@ MonoBehaviour:
   speakername: 
   sentences:
   - Ah, there's my music box!
+  continueButtonButton: {fileID: 0}
+  continueText: {fileID: 0}
 --- !u!1 &814013372
 GameObject:
   m_ObjectHideFlags: 0
@@ -9109,6 +9114,8 @@ MonoBehaviour:
   sentences:
   - "Oh. My old diary\u2026"
   - ' '
+  continueButtonButton: {fileID: 0}
+  continueText: {fileID: 0}
 --- !u!1 &815880772
 GameObject:
   m_ObjectHideFlags: 0
@@ -13102,16 +13109,16 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1322016248}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 736027761}
+  m_Father: {fileID: 1752121223}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 110.87927, y: 0}
+  m_AnchoredPosition: {x: 1460.7378, y: -422.36462}
   m_SizeDelta: {x: 221.7585, y: 60.6076}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1322016251
@@ -14261,11 +14268,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1464926436}
-  - component: {fileID: 1464926435}
   - component: {fileID: 1464926434}
   - component: {fileID: 1464926433}
   - component: {fileID: 1464926432}
   - component: {fileID: 1464926431}
+  - component: {fileID: 1464926437}
   m_Layer: 0
   m_Name: Tile2
   m_TagString: Untagged
@@ -14332,20 +14339,35 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.000002026558, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
-    newSize: {x: 1, y: 1}
+    oldSize: {x: 2.057778, y: 1.1155555}
+    newSize: {x: 2.057778, y: 1.1155555}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 1.877856, y: 1}
   m_EdgeRadius: 0
---- !u!212 &1464926435
+--- !u!4 &1464926436
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1464926430}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 10.450316, y: 0.28448057, z: 90.424446}
+  m_LocalScale: {x: 5, y: 5, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1948118141}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &1464926437
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -14386,32 +14408,17 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 72efc9ef41b5b134c8c3444cf54a973a, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Sprite: {fileID: 21300000, guid: 8eaacf46f3a26b04dbaae642852e4630, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 2.057778, y: 1.1155555}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!4 &1464926436
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1464926430}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 10.450316, y: 0.28448057, z: 90.424446}
-  m_LocalScale: {x: 10, y: 5, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1948118141}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1475405089
 GameObject:
   m_ObjectHideFlags: 0
@@ -16983,6 +16990,9 @@ MonoBehaviour:
   speakername: 
   sentences:
   - "Mmmm\u2026 I remember having a music box somewhere around here."
+  - 'CONTROLS: click to interact with objects and click arrows to navigate'
+  continueButtonButton: {fileID: 0}
+  continueText: {fileID: 0}
 --- !u!114 &1672020599
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17969,13 +17979,14 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1752121222}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1322016249}
   m_Father: {fileID: 736027761}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}

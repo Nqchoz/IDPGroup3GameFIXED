@@ -7,8 +7,7 @@ public class SlotsScript : MonoBehaviour
 {
     private Inventory inventory;
     public int slotnumber;
-    public Pickup pickupscript;
-   
+    public Pickup pickupscript;   
 
 
     // Start is called before the first frame update
@@ -28,6 +27,7 @@ public class SlotsScript : MonoBehaviour
     }
     public void DestroyHandle(){
         Destroy(pickupscript.HandleClone);
+       
     }
     public void DestroyHint(){
         Destroy(pickupscript.HintClone);

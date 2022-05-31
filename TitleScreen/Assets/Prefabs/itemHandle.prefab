@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 9190307960029571518}
   - component: {fileID: 9190307960029571516}
   - component: {fileID: 8164924968559349442}
+  - component: {fileID: 6370566916856584598}
   m_Layer: 5
   m_Name: itemHandle
   m_TagString: Untagged
@@ -134,6 +135,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 6370566916856584598}
+        m_TargetAssemblyTypeName: HandleDialoguePLSWORK, Assembly-CSharp
+        m_MethodName: HandleDialogue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &8164924968559349442
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -151,6 +164,24 @@ MonoBehaviour:
   movementscript: {fileID: 0}
   Musicbox: {fileID: 0}
   MBWithHandle: {fileID: 21300000, guid: 57339f2a7853c8640b80abf13168db2c, type: 3}
+  OMB: []
+  taken: 
   OpenTextFieldBTN: {fileID: 0}
-  slotsscript: {fileID: 0}
-  HeldHandle: {fileID: 0}
+  OTFGO: {fileID: 0}
+  OpenTextFieldBTNGO: {fileID: 0}
+  KeyItem: {fileID: 0}
+  PicItem: {fileID: 0}
+  sD: {fileID: 0}
+--- !u!114 &6370566916856584598
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9190307960029571512}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71aa034380110234db26631c39344615, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sD: {fileID: 0}

@@ -25,7 +25,7 @@ public class DiarySD : MonoBehaviour
         sD.MakeDialogue(GameObject.Find("OpenDiary1").GetComponent<Dialogue>(), new string[] {"Now let's see.", " Maybe I had written something about the music box handle."});
     }
     
-    public void attachHandle(){
+    public void HandleD(){
         sD.MakeDialogue(GameObject.Find("HandleDialogueScript").GetComponent<Dialogue>(), new string[] {"I can't remember why, but I love this song. ", "Wait...",  "why does the music sound so weird?", "Maybe the box is more broken than I thought. Maybe if I can open it up I could fix it."});
     }
 }

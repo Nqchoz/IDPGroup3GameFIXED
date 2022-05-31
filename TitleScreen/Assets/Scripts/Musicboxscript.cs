@@ -22,7 +22,7 @@ public class Musicboxscript : MonoBehaviour
    public GameObject KeyItem;
    public GameObject PicItem;
    private Hints hintsscript;
-   public DiarySD dodialogue;
+   public startDialogue sD; //startDialogue script
 
    
 
@@ -39,19 +39,16 @@ public class Musicboxscript : MonoBehaviour
         KeyButton.enabled = false;
         PicButton.enabled = false;
         hintsscript = GameObject.Find("HintPopup").GetComponent<Hints>();
-        dodialogue = GameObject.Find("Dialogue").GetComponent<DiarySD>();
-        
    }
+
 
     public void MusicBoxInteract(){
         //add handle to the music box
         if (pickupscript.handleacquired && movementscript.camra.transform.position == movementscript.MusicBoxZoom1){
             Musicbox.GetComponent<Image>().sprite = MBWithHandle;
-            slotsscript.DestroyHandle();
+            slotsscript.DestroyHandle(); // also do the dialogue cause it brokey
             hintsscript.UpdateHint();
-            dodialogue.attachHandle();
             OpenTextFieldBTN.enabled = true;
-        
         }
     }
 
