@@ -15,16 +15,12 @@ public class Dialogue : MonoBehaviour
     public TextMeshProUGUI speaker;
     public string speakername;
     public string[] sentences;
-    public Button continueButtonButton;
-    public TextMeshProUGUI continueText;
     
     void Awake(){
         textDisplay = GameObject.Find("DialogueText").GetComponent<TextMeshProUGUI>();
         DialogueGroup = GameObject.Find("Dialogue");
         speaker = GameObject.Find("Speaker").GetComponent<TextMeshProUGUI>();
         continueButton.SetActive(false);
-        continueButtonButton = GameObject.Find("ContinueB").GetComponent<Button>();
-        continueText = GameObject.Find("ContinueT").GetComponent<TextMeshProUGUI>();
 
     }
     public void DoDialogue(){
@@ -35,7 +31,6 @@ public class Dialogue : MonoBehaviour
 
     void Update(){
         if(textDisplay.text == sentences[index]){
-            continueButtonButton.enabled = false;
             continueButton.SetActive(true);
         }
     }
@@ -50,7 +45,6 @@ public class Dialogue : MonoBehaviour
 
     public void NextSentence(){
         continueButton.SetActive(false);
-        continueButtonButton.enabled = false;
         if (index < sentences.Length - 1){
             index ++;
             textDisplay.text = "";

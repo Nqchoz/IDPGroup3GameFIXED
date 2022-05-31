@@ -24,6 +24,7 @@ TagManager:
   - PicButton
   - OTFGO
   - ContinueButt
+  - ContinueB
   layers:
   - Default
   - TransparentFX

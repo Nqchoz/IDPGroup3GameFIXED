@@ -64,11 +64,14 @@ public class UI_InputWindow : MonoBehaviour
         if (inputField.text == CorrectPass.ToString()){
             //if answer is correct
             Hide();
-            MBScript.SolvedMusicBox();
+            if (CorrectPass == "macky"){
+                MBScript.SolvedMusicBox();
+            }
             if(CorrectPass == "dcahpb")
             {
                 mainInputField.text = timer;
                 Debug.Log(timer);
+                
             }
 
         }
