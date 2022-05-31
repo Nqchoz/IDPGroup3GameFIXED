@@ -8,7 +8,7 @@ public class SheetManager : MonoBehaviour
     static readonly string[] Scopes = { Google.Apis.Sheets.v4.SheetsService.Scope.Spreadsheets };
     static readonly string ApplicationName = "mExpressData";
     static readonly string SpreadsheetId = "1jOGjA3UDEoJcltcoF3J47_8pGrknyGpYC5xtYkH1yo0";
-    static readonly string sheet = "Sheet2";
+    static readonly string sheet = "Seconds to Minutes";
     static Google.Apis.Sheets.v4.SheetsService service;
     static public List<string> Usernames = new List<string>();
     static public List<string> Times = new List<string>();
@@ -46,7 +46,7 @@ public class SheetManager : MonoBehaviour
 
     public void ReadRow1()
     {
-        var range = $"{sheet}!A1:M1";
+        var range = $"{sheet}!A1:D1";
         var request = service.Spreadsheets.Values.Get(SpreadsheetId, range);
 
         var response = request.Execute();
@@ -57,14 +57,14 @@ public class SheetManager : MonoBehaviour
             foreach (var row in values)
             {
                 Username1.text = "1. " + ($"{row[0]}") + ":";
-                Time1.text = "   " + ($"{row[1]}") + " seconds";
+                Time1.text = "Time: " + ($"{row[2]}");
             }
         }
     }
 
     public void ReadRow2()
     {
-        var range = $"{sheet}!A2:M2";
+        var range = $"{sheet}!A2:D2";
         var request = service.Spreadsheets.Values.Get(SpreadsheetId, range);
 
         var response = request.Execute();
@@ -75,14 +75,14 @@ public class SheetManager : MonoBehaviour
             foreach (var row in values)
             {
                 Username2.text = "2. " + ($"{row[0]}") + ":";
-                Time2.text = "   " + ($"{row[1]}") + " seconds";
+                Time2.text = "Time: " + ($"{row[2]}");
             }
         }
     }
 
     public void ReadRow3()
     {
-        var range = $"{sheet}!A3:M3";
+        var range = $"{sheet}!A3:D3";
         var request = service.Spreadsheets.Values.Get(SpreadsheetId, range);
 
         var response = request.Execute();
@@ -93,14 +93,14 @@ public class SheetManager : MonoBehaviour
             foreach (var row in values)
             {
                 Username3.text = "3. " + ($"{row[0]}") + ":";
-                Time3.text = "   " + ($"{row[1]}") + " seconds";
+                Time3.text = "Time: " + ($"{row[2]}");
             }
         }
     }
 
     public void ReadRow4()
     {
-        var range = $"{sheet}!A4:M4";
+        var range = $"{sheet}!A4:D4";
         var request = service.Spreadsheets.Values.Get(SpreadsheetId, range);
 
         var response = request.Execute();
@@ -111,14 +111,14 @@ public class SheetManager : MonoBehaviour
             foreach (var row in values)
             {
                 Username4.text = "4. " + ($"{row[0]}") + ":";
-                Time4.text = "   " + ($"{row[1]}") + " seconds";
+                Time4.text = "Time: " + ($"{row[2]}");
             }
         }
     }
 
     public void ReadRow5()
     {
-        var range = $"{sheet}!A5:M5";
+        var range = $"{sheet}!A5:D5";
         var request = service.Spreadsheets.Values.Get(SpreadsheetId, range);
 
         var response = request.Execute();
@@ -129,7 +129,7 @@ public class SheetManager : MonoBehaviour
             foreach (var row in values)
             {
                 Username5.text = "5. " + ($"{row[0]}") + ":";
-                Time5.text = "   " + ($"{row[1]}") + " seconds";
+                Time5.text = "Time: " + ($"{row[2]}");
             }
         }
     }

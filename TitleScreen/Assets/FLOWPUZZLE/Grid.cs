@@ -6,6 +6,21 @@ using UnityEngine.UI;
 
 public class Grid : MonoBehaviour
 {
+    //for spreadsheet purposes
+    private GameObject obj1;
+
+    void Awake()
+    {
+        obj1 = GameObject.FindGameObjectWithTag("Timer");
+    }
+
+    private float time = 0.0f;
+    private string timer = "";
+
+    public InputField mainInputField;
+
+    [SerializeField] InputField feedback1;
+
     public enum Colors{
         Empty,
         Red,
@@ -38,7 +53,9 @@ public class Grid : MonoBehaviour
        didwin = false;
    }
    void Update(){
-       if (didwin != true){
+        time = Mathf.Abs(1800 - obj1.GetComponent<Clock>().timetodisplay);
+        timer = time.ToString();
+        if (didwin != true){
             UpdateGameBoard();
             if (isArrayEqual == 25){
                 win();
@@ -83,6 +100,8 @@ public class Grid : MonoBehaviour
         Basement2_1Access.GetComponent<Image>().color = new Color (255, 255, 255, 100);
         Basement2_1Access.GetComponent<Button>().enabled = true;
         didwin = true;
+        mainInputField.text = timer;
+        Debug.Log(timer);
     }
 
 

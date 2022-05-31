@@ -6,7 +6,25 @@ using UnityEngine.UI;
 using TMPro;
 
 public class UI_InputWindow : MonoBehaviour
-{ 
+{
+    //for timer stuff
+    private GameObject obj1;
+
+    private float time = 0.0f;
+    private string timer = "";
+
+    public InputField mainInputField;
+
+    [SerializeField] InputField feedback1;
+
+    void Update()
+    {
+        time = Mathf.Abs(1800 - obj1.GetComponent<Clock>().timetodisplay);
+        timer = time.ToString();
+    }
+
+    //actual code
+
     public Musicboxscript MBScript;
     public Button okBtn;
     public Button cancelBtn;
@@ -20,6 +38,7 @@ public class UI_InputWindow : MonoBehaviour
         titleText = GameObject.FindGameObjectWithTag("Title").GetComponent<TextMeshProUGUI>();
         inputField = GameObject.FindGameObjectWithTag("InputField").GetComponent<TMP_InputField>();
         Hide();
+        obj1 = GameObject.FindGameObjectWithTag("Timer");
 
     }
     //show the window with the set parameters
@@ -46,6 +65,11 @@ public class UI_InputWindow : MonoBehaviour
             //if answer is correct
             Hide();
             MBScript.SolvedMusicBox();
+            if(CorrectPass == "dcahpb")
+            {
+                mainInputField.text = timer;
+                Debug.Log(timer);
+            }
 
         }
         else{

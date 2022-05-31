@@ -8,10 +8,11 @@ using UnityEngine.SceneManagement;
 public class Puzzle3Timer : MonoBehaviour
 {
     public Pickup pickupscript;
+    private GameObject obj1;
 
     void Awake(){
         pickupscript = GameObject.FindGameObjectWithTag("pickupscript").GetComponent<Pickup>();
-
+        obj1 = GameObject.FindGameObjectWithTag("Timer");
     }
 
     private float time = 0.0f;
@@ -22,11 +23,9 @@ public class Puzzle3Timer : MonoBehaviour
 
     [SerializeField] InputField feedback1;
 
-    string URL = "https://docs.google.com/forms/u/0/d/e/1FAIpQLSckfvAf6W5IDYroE8crKsB7s1LVzpHpboKajBt4N8fcoQVBdw/formResponse";
-
     void Update()
     {
-        time += Time.deltaTime;
+        time = Mathf.Abs(1800 - obj1.GetComponent<Clock>().timetodisplay);
         timer = time.ToString();
     }
 

@@ -9,25 +9,31 @@ public class Puzzle2Timer : MonoBehaviour
 {
     private float time = 0.0f;
     private string timer = "";
-    private int clicks = 0;
+    private int click = 0;
+    private GameObject obj1;
+
 
     public InputField mainInputField;
 
     [SerializeField] InputField feedback1;
 
-    string URL = "https://docs.google.com/forms/u/0/d/e/1FAIpQLSckfvAf6W5IDYroE8crKsB7s1LVzpHpboKajBt4N8fcoQVBdw/formResponse";
+    void Awake()
+    {
+        obj1 = GameObject.FindGameObjectWithTag("Timer");
+    }
 
     void Update()
     {
-        time += Time.deltaTime;
+        time = Mathf.Abs(1800 - obj1.GetComponent<Clock>().timetodisplay);
         timer = time.ToString();
     }
 
     public void Send()
     {
-        clicks += 1;
-        if (clicks == 1){
+        click += 1;
+        if (click == 1)
+        {
             mainInputField.text = timer;
         }
     }
-} 
+}

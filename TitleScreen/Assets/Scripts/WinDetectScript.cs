@@ -1,10 +1,32 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class WinDetectScript : MonoBehaviour
 {
+    //for timer purposes
+    private GameObject obj1;
 
+    void Awake()
+    {
+        obj1 = GameObject.FindGameObjectWithTag("Timer");
+    }
+
+    private float time = 0.0f;
+    private string timer = "";
+
+    public InputField mainInputField;
+
+    [SerializeField] InputField feedback1;
+
+    void Update()
+    {
+        time = Mathf.Abs(1800 - obj1.GetComponent<Clock>().timetodisplay);
+        timer = time.ToString();
+    }
+
+    //actual win detect code
     public Pickup pickupscript;
     public GameObject basementSequence;
     public GameObject boxZoom;
@@ -23,6 +45,8 @@ public class WinDetectScript : MonoBehaviour
         pickupscript.ItemToInv(basementSequence);
         move.EnterBasement2();
         boxZoom.SetActive(false);
+        mainInputField.text = timer;
+        Debug.Log(timer);
     }
 
     // Start is called before the first frame update
