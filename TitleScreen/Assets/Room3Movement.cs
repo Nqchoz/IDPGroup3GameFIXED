@@ -35,6 +35,8 @@ public class Room3Movement : MonoBehaviour
     public void EnterRoom3(){
         Room1M.camra.transform.position = Rooms[currentRoom];
     }
-
+    public void engGame(){
+        Room1M.camra.transform.position = new Vector3 (2880f, -3780f-1080f, -10f);
+    }
 
 }

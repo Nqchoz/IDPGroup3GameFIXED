@@ -5,6 +5,21 @@ using UnityEngine.UI;
 
 public class PuzzlePieces : MonoBehaviour
 {
+    private GameObject obj1;
+
+    private float time = 0.0f;
+    private string timer = "";
+
+    public InputField mainInputField;
+
+    [SerializeField] InputField feedback1;
+
+    void Update()
+    {
+        time = Mathf.Abs(1800 - obj1.GetComponent<Clock>().timetodisplay);
+        timer = time.ToString();
+    }
+
     public GameObject[] FramePieces; // prefabs for the ones that go in the frame lol
     public GameObject[] invPieces; // prefabs for inventroy
     private bool[] attachedP = new bool[8];
@@ -17,6 +32,7 @@ public class PuzzlePieces : MonoBehaviour
     public Inventory inventory;
     public bool temp;
     public GameObject Pict;
+    public Room3Movement r3m;
 
     void Awake(){
         for (int i = 0; i<8; i++){
@@ -26,6 +42,8 @@ public class PuzzlePieces : MonoBehaviour
         piecesPlaced = 0;
         pickup = GameObject.Find("PickupScript").GetComponent<Pickup>();
         inventory = GameObject.FindGameObjectWithTag("Player").GetComponent<Inventory>();
+        obj1 = GameObject.FindGameObjectWithTag("Timer");
+        r3m =GameObject.Find("Room3").GetComponent<Room3Movement>();
     }
     
     public void FoundPiece(int i, GameObject gameobj){
@@ -61,6 +79,7 @@ public class PuzzlePieces : MonoBehaviour
                     
                 }
                 givePict();
+                r3m.engGame();
             }
             else{
                 piecesPlaced = 0;
