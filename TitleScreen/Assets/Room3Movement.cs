@@ -10,7 +10,7 @@ public class Room3Movement : MonoBehaviour
 
     void Awake(){
         Room1M = GameObject.Find("ShelfZoom").GetComponent<ShelfClicked>();
-        Rooms = new Vector3[] {new Vector3(-960f, -1620f, -10f), new Vector3(-960f, -2700f, -10f), new Vector3(-960f, -3780f, -10f),new Vector3(-960f, -4860f, -10f)};
+        Rooms = new Vector3[] {new Vector3(2880f, -540f, -10f), new Vector3(2880f, -1620f, -10f), new Vector3(2880f, -2700f, -10f), new Vector3(2880f, -3780f, -10f)};
         currentRoom = 3;
     }
 
@@ -32,7 +32,9 @@ public class Room3Movement : MonoBehaviour
         }
         Room1M.camra.transform.position = Rooms[currentRoom];
     }
-
+    public void EnterRoom3(){
+        Room1M.camra.transform.position = Rooms[currentRoom];
+    }
 
 
 }

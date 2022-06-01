@@ -8,6 +8,8 @@ public class ExitPopup : MonoBehaviour
    public GameObject CPpopCLONE; //instantiated prefab
    public GameObject Sequence; //popup prefab
    private GameObject SequenceCLONE; //instantiated prefab
+   public GameObject PicturePopup; // popup prefab
+   private GameObject PicturePopupCLONE; // instantiated prefab
 
    public void openPopup(){
        CPpopCLONE = Instantiate(CPpop, GameObject.Find("Popup").transform, false);
@@ -23,5 +25,11 @@ public class ExitPopup : MonoBehaviour
    public void closeSequence(){
        Debug.Log("won't destroy");
        Destroy(SequenceCLONE);
+   }
+   public void openPicture(){
+       PicturePopupCLONE = Instantiate(PicturePopup, GameObject.Find("Popup").transform, false);
+   }
+   public void closePicture(){
+       Destroy(PicturePopupCLONE);
    }
 }

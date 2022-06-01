@@ -42,6 +42,7 @@ public class Grid : MonoBehaviour
    public Image Basement1Image;
    public GameObject Basement2_1Access;
    public bool didwin;
+   public GameObject ElectricalBox;
 
    void Start(){
        ClearBoard();
@@ -50,6 +51,7 @@ public class Grid : MonoBehaviour
        Basement2_1Access = GameObject.Find("Basement1_1 Back");
        Basement2_1Access.GetComponent<Image>().color = new Color (255, 255, 255, 0);
        Basement2_1Access.GetComponent<Button>().enabled = false;
+       ElectricalBox = GameObject.Find("ElectricalBox");
        didwin = false;
    }
    void Update(){
@@ -102,6 +104,7 @@ public class Grid : MonoBehaviour
         didwin = true;
         mainInputField.text = timer;
         Debug.Log(timer);
+        ElectricalBox.SetActive(false);
     }
 
 

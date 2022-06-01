@@ -14,6 +14,8 @@ public class UI_InputWindow : MonoBehaviour
     private string timer = "";
 
     public InputField mainInputField;
+    public Room3Movement R3movement;
+    public SlotsScript slotsscript;
 
     [SerializeField] InputField feedback1;
 
@@ -39,6 +41,8 @@ public class UI_InputWindow : MonoBehaviour
         inputField = GameObject.FindGameObjectWithTag("InputField").GetComponent<TMP_InputField>();
         Hide();
         obj1 = GameObject.FindGameObjectWithTag("Timer");
+        R3movement = GameObject.Find("Room3").GetComponent<Room3Movement>();
+        slotsscript = GameObject.Find("SlotsScript").GetComponent<SlotsScript>();
 
     }
     //show the window with the set parameters
@@ -71,6 +75,8 @@ public class UI_InputWindow : MonoBehaviour
             {
                 mainInputField.text = timer;
                 Debug.Log(timer);
+                R3movement.EnterRoom3();
+                slotsscript.ClearInv();
                 
             }
 
