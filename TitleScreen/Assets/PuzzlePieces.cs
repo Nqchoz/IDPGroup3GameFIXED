@@ -79,7 +79,9 @@ public class PuzzlePieces : MonoBehaviour
                     
                 }
                 givePict();
+                mainInputField.text = timer;
                 r3m.engGame();
+                Debug.Log(timer);
             }
             else{
                 piecesPlaced = 0;

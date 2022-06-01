@@ -39,6 +39,7 @@ public class SendData: MonoBehaviour
         form.AddField("entry.673413182", s5);
         form.AddField("entry.242230946", s6);
         form.AddField("entry.758704215", s7);
+        Debug.Log("why");
         form.AddField("entry.1271121528", s8);
         form.AddField("entry.832602513", s9);
         form.AddField("entry.1113452384", s10);
