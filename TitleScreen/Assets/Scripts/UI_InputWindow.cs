@@ -33,6 +33,7 @@ public class UI_InputWindow : MonoBehaviour
     public TextMeshProUGUI titleText;
     public TMP_InputField inputField;
     public String CorrectPass;
+    public GameObject RadioGetDialogue;
 
     private void Awake(){
         okBtn = GameObject.FindGameObjectWithTag("OkButton").GetComponent<Button>();
@@ -80,9 +81,16 @@ public class UI_InputWindow : MonoBehaviour
                 
             }
             if (CorrectPass == "2458"){
-                Debug.Log("YOYOYOYOOOOY");
+                GameObject.Find("Radiohitbox").SetActive(false);
+                RadioGetDialogue.SetActive(true);
+            }
+            if (CorrectPass == "WAKE UP"){
+                Debug.Log("You win!");
             }
 
+        }
+        else if (CorrectPass.ToString() == "2458"){
+            Hide();
         }
         else{
             inputField.text = "INCORRECT.";
@@ -110,6 +118,12 @@ public class UI_InputWindow : MonoBehaviour
         //show the window with the parameters set to the following values
         Show("Enter Radio Frequency", "MAX 4 numbers", "1234567890", 4);
         CorrectPass = "2458";
+
+    }
+    public void Safe(){
+        //show the window with the parameters set to the following values
+        Show("Enter Passcode", "CAPITAL LETTERS", "WAKE UP ", 7);
+        CorrectPass = "WAKE UP";
 
     }
     private char ValidateChar(string validCharacters, char addedChar){

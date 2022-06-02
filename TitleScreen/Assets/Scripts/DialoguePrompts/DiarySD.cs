@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class DiarySD : MonoBehaviour
 {
@@ -9,6 +10,7 @@ public class DiarySD : MonoBehaviour
     public startDialogue sD; //startDialogue script\
     public bool OpenedD;
     public bool FoundD;
+    public GameObject radioDLG;
 
     void Awake(){
         sD = GameObject.Find("Dialogue").GetComponent<startDialogue>();
@@ -28,4 +30,5 @@ public class DiarySD : MonoBehaviour
     public void HandleD(){
         sD.MakeDialogue(GameObject.Find("HandleDialogueScript").GetComponent<Dialogue>(), new string[] {"I can't remember why, but I love this song. ", "Wait...",  "why does the music sound so weird?", "Maybe the box is more broken than I thought. Maybe if I can open it up I could fix it."});
     }
+    
 }

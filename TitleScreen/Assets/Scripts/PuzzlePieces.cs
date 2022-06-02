@@ -85,7 +85,7 @@ public class PuzzlePieces : MonoBehaviour
                 
                 mainInputField.text = timer;
                 slots.ClearInv();
-                pickup.ItemToInv(Pict);
+                StartCoroutine(pickuppict());
                 radio.enabled = true;
             }
             else{
@@ -94,6 +94,10 @@ public class PuzzlePieces : MonoBehaviour
         }
     }
     
+    public IEnumerator pickuppict(){
+        yield return new WaitForSeconds(1);
+        pickup.ItemToInv(Pict);
+    }
 
 
 }
