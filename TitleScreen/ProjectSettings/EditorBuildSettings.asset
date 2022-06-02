@@ -17,4 +17,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/LeaderboardTest.unity
     guid: 5cd07516c1087cb46907bf1dc0808c2f
+  - enabled: 1
+    path: Assets/Scenes/backstore.unity
+    guid: 8005c09ef828cd94e9d947890373da59
+  - enabled: 1
+    path: Assets/Scenes/Postgame.unity
+    guid: fecd5f86ba3c4a64885b8c00edc18447
   m_configObjects: {}

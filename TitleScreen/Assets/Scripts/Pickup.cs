@@ -14,10 +14,12 @@ public class Pickup : MonoBehaviour
     public bool Room2Access;
     public GameObject HintClone;
     public GameObject[] heldItems;
+    public GameObject CerealBox;
 
     public void Start(){
 
         inventory = GameObject.FindGameObjectWithTag("Player").GetComponent<Inventory>();
+        ItemToInv(CerealBox);
     }
 
     public void AddToInv(){

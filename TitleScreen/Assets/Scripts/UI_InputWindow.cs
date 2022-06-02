@@ -36,6 +36,10 @@ public class UI_InputWindow : MonoBehaviour
     public TMP_InputField inputField;
     public String CorrectPass;
     public GameObject RadioGetDialogue;
+    public Image safe;
+    public Sprite openSafe;
+    public GameObject safebutton1;
+    public GameObject safebutton2;
 
     private void Awake(){
         okBtn = GameObject.FindGameObjectWithTag("OkButton").GetComponent<Button>();
@@ -89,6 +93,9 @@ public class UI_InputWindow : MonoBehaviour
             }
             if (CorrectPass == "WAKE UP"){
                 Debug.Log("You win!");
+                safe.sprite = openSafe;
+                safebutton1.SetActive(false);
+                safebutton2.SetActive(true);
                 mainInputField2.text = timer;
             }
 
@@ -126,7 +133,7 @@ public class UI_InputWindow : MonoBehaviour
     }
     public void Safe(){
         //show the window with the parameters set to the following values
-        Show("Enter Passcode", "CAPITAL LETTERS", "WAKE UP ", 7);
+        Show("Enter Passcode", "CAPITAL LETTERS", "ABCDEFGHIJKLMNOPQRSTUVWXYZ ", 7);
         CorrectPass = "WAKE UP";
 
     }

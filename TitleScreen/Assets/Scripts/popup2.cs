@@ -12,4 +12,10 @@ public class popup2 : MonoBehaviour
     public void popupB(){
         exit.openSequence();
     }
+    public void popupCereal(){
+        exit.openCereal();
+    }
+    public void closeCereal(){
+        exit.closeCereal();
+    }
 }
