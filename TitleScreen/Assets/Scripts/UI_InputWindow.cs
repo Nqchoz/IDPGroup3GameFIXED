@@ -79,6 +79,9 @@ public class UI_InputWindow : MonoBehaviour
                 slotsscript.ClearInv();
                 
             }
+            if (CorrectPass == "2458"){
+                Debug.Log("YOYOYOYOOOOY");
+            }
 
         }
         else{
@@ -101,6 +104,12 @@ public class UI_InputWindow : MonoBehaviour
         //show the window with the parameters set to the following values
         Show("Enter Password", "6 Letters", "abcdefghijklmnopqrstuvwxyz", 6);
         CorrectPass = "dcahpb";
+
+    }
+    public void RadioHZ(){
+        //show the window with the parameters set to the following values
+        Show("Enter Radio Frequency", "MAX 4 numbers", "1234567890", 4);
+        CorrectPass = "2458";
 
     }
     private char ValidateChar(string validCharacters, char addedChar){
