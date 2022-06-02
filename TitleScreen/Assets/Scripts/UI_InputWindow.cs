@@ -14,6 +14,8 @@ public class UI_InputWindow : MonoBehaviour
     private string timer = "";
 
     public InputField mainInputField;
+    public InputField mainInputField2;
+    public InputField mainInputField3;
     public Room3Movement R3movement;
     public SlotsScript slotsscript;
 
@@ -83,9 +85,11 @@ public class UI_InputWindow : MonoBehaviour
             if (CorrectPass == "2458"){
                 GameObject.Find("Radiohitbox").SetActive(false);
                 RadioGetDialogue.SetActive(true);
+                mainInputField3.text = timer;
             }
             if (CorrectPass == "WAKE UP"){
                 Debug.Log("You win!");
+                mainInputField2.text = timer;
             }
 
         }

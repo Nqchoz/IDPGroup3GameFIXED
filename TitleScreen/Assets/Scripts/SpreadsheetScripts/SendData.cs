@@ -17,6 +17,7 @@ public class SendData: MonoBehaviour
     [SerializeField] InputField puzzle7;
     [SerializeField] InputField puzzle8;
     [SerializeField] InputField puzzle9;
+    [SerializeField] InputField feelings;
     [SerializeField] InputField feedback;
 
 
@@ -24,11 +25,11 @@ public class SendData: MonoBehaviour
 
     public void Send()
     {
-        StartCoroutine(Post(UsernameScript.enteredusername, puzzle1.text, puzzle2.text, puzzle3.text, puzzle4.text, puzzle5.text, puzzle6.text, puzzle7.text, puzzle8.text, puzzle9.text, feedback.text));
+        StartCoroutine(Post(UsernameScript.enteredusername, puzzle1.text, puzzle2.text, puzzle3.text, puzzle4.text, puzzle5.text, puzzle6.text, puzzle7.text, puzzle8.text, puzzle9.text, feelings.text, feedback.text));
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
-    IEnumerator Post(string s1, string s2, string s3, string s4, string s5, string s6, string s7, string s8, string s9, string s10, string s11)
+    IEnumerator Post(string s1, string s2, string s3, string s4, string s5, string s6, string s7, string s8, string s9, string s10, string s11, string s12)
     {
         WWWForm form = new WWWForm();
         form.AddField("entry.1276959385", s1);
@@ -43,7 +44,9 @@ public class SendData: MonoBehaviour
         form.AddField("entry.1271121528", s8);
         form.AddField("entry.832602513", s9);
         form.AddField("entry.1113452384", s10);
-        form.AddField("entry.1702207418", s11);
+        form.AddField("entry.1569879714", s11);
+        form.AddField("entry.1702207418", s12);
+
 
         UnityWebRequest www = UnityWebRequest.Post(URL, form);
         
